@@ -1,0 +1,11 @@
+.tabs-holder {
+    background: #1D53A5;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-link {
+    background-color: transparent;
+    border: none;
+    color: white;
+    border-left: 1px solid white;
+}
