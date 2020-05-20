@@ -182,12 +182,16 @@
             }
             // resize window to desktop - modal closes
             $(window).resize(function () {
-                if ($(window).width() >= 768) {
+                if ($(window).width() <= 768 && $(window).orientation() == 0) {
                     if (document.getElementById("portrait-modal").style.display === "block")
                         $('.close').click()
                 }
-                else {
+                else if ($(window).width() <= 768 && $(window).orientation() != 0) {
                     $('#portrait-btn').click()
+                }
+                else if ($(window).width() >= 768) {
+                    if (document.getElementById("portrait-modal").style.display === "block")
+                        $('.close').click()
                 }
 
             });
