@@ -1,6 +1,6 @@
 .tabs-holder {
-    background: #1D53A5;
-    height: 45px !important;
+    background: #002F9D;
+    height: 70px !important;
 
 }
 
@@ -17,14 +17,7 @@
     margin-right: 10px;
 }
 
-.b-l-1 {
-    border-left: 0.1px solid #F5FFFA !important;
-}
 
-.nav.nav-tabs {
-    justify-content: center;
-    border: none;
-}
 
 html,
 body {
@@ -38,18 +31,7 @@ body {
     padding: 0;
 }
 
-@media only screen and (max-width: 768px) {
 
-    .nav-tabs .nav-link.active,
-    .nav-tabs .nav-link {
-        background-color: transparent;
-        border: none;
-        color: black;
-        border-right: 0.1px solid #F5FFFA;
-        border-radius: 0;
-    }
-
-}
 
 .img-fluid {
     display: block;
@@ -60,23 +42,46 @@ body {
 
 .nav-item {
     display: inline-block;
+
 }
 
+.nav-tabs {
+    padding: 2% 0 !important;
+}
+
+/* scrollable tab */
 .nav.nav-tabs {
     text-align: center;
     border: none;
     overflow: auto;
     white-space: nowrap;
     display: block;
-    padding: 10px 30px;
+    padding: 1% 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link {
-    background-color: transparent;
     border: none;
     color: white;
-    border-right: 0.1px solid #F5FFFA;
     border-radius: 0;
     padding: 0 15px;
+}
+
+
+.nav-link:hover {
+    background: white;
+    color: #002F9D !important;
+    padding: 1px;
+
+
+}
+
+.nav-link.active:hover {
+    background: white;
+    color: #002F9D !important;
 }
