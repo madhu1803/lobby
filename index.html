@@ -192,16 +192,19 @@
                 }
             }, false);
 
-            // $(window).resize(function () {
-            //     if ($(window).width() >= 768) {
-            //         if (document.getElementById("portrait-modal").style.display === "block")
-            //             $('.close').click()
-            //     }
-            //     else if ($(window).width() <= 768) {
-            //         $('#portrait-btn').click()
-            //     }
+            $(window).resize(function () {
+                if ($(window).width() >= 768) {
+                    if (document.getElementById("portrait-modal").style.display === "block")
+                        $('.close').click()
+                }
+                else {
+                    if (window.matchMedia("(orientation: portrait)").matches) {
+                        // you're in PORTRAIT mode
+                        $('#portrait-btn').click()
+                    }
+                }
 
-            // });
+            });
 
         </script>
 </body>
