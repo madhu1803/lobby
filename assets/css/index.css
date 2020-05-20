@@ -17,8 +17,6 @@
     margin-right: 10px;
 }
 
-
-
 html,
 body {
     margin: 0;
@@ -33,21 +31,11 @@ body {
 
 
 
-.img-fluid {
-    display: block;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-}
-
 .nav-item {
     display: inline-block;
 
 }
 
-.nav-tabs {
-    padding: 2% 0 !important;
-}
 
 /* scrollable tab */
 .nav.nav-tabs {
@@ -72,7 +60,7 @@ body {
     padding: 0 15px;
 }
 
-
+/* hover  */
 .nav-link:hover {
     background: white;
     color: #002F9D !important;
@@ -84,4 +72,11 @@ body {
 .nav-link.active:hover {
     background: white;
     color: #002F9D !important;
+}
+
+/* img */
+.img-fluid {
+    display: block;
+    width: 100%;
+    height: 100%;
 }
