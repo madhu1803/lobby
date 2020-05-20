@@ -175,46 +175,33 @@
         <script src="./assets/js/main.js"></script>
 
         <script>
-
+            //  on portrait -display modal 
             if (window.matchMedia("(orientation: portrait)").matches) {
                 // you're in PORTRAIT mode
                 $('#portrait-btn').click()
             }
-
-            // resize window to desktop - modal closes
-            // $(window).resize(function () {
-            //     if ($(window).width() <= 768 && window.matchMedia("(orientation: portrait)").matches) {
-            //         $('#portrait-btn').click()
-            //         if (document.getElementById("portrait-modal").style.display === "block")
-            //             $('.close').click()
-            //     }
-            //     else if ($(window).width() <= 768 && $(window).orientation() == 0) {
-
-            //     }
-            //     else if ($(window).width() >= 768 && $(window).orientation() == 0) {
-            //         if (document.getElementById("portrait-modal").style.display === "block")
-            //             $('.close').click()
-            //     }
-            //     else
-            //         alert("error")
-
-            // });
-            $(window).resize(function () {
-                if ($(window).width() >= 768) {
+            //event listener for orientation 
+            window.addEventListener("orientationchange", function () {
+                if (window.matchMedia("(orientation: portrait)").matches) {
+                    // you're in PORTRAIT mode
+                    $('#portrait-btn').click()
+                }
+                else {
                     if (document.getElementById("portrait-modal").style.display === "block")
                         $('.close').click()
                 }
-                else if ($(window).width() <= 768) {
-                    $('#portrait-btn').click()
-                }
-
-            });
-
-            window.addEventListener("orientationchange", function () {
-                if (window.orientation === 0)
-                    $('#portrait-btn').click()
-
             }, false);
+
+            // $(window).resize(function () {
+            //     if ($(window).width() >= 768) {
+            //         if (document.getElementById("portrait-modal").style.display === "block")
+            //             $('.close').click()
+            //     }
+            //     else if ($(window).width() <= 768) {
+            //         $('#portrait-btn').click()
+            //     }
+
+            // });
 
         </script>
 </body>
