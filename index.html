@@ -127,13 +127,10 @@
                 <div class="modal-body">
                     <div class="container">
                         <div class="jumbotron">
-
-
                         </div>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-danger" data-dismiss="modal">Ignore and Close</button>
-
                     </div>
                 </div>
             </div>
@@ -181,6 +178,10 @@
                     if (window.matchMedia("(orientation: portrait)").matches) {
                         // you're in PORTRAIT mode
                         $('#portrait-btn').click()
+                    }
+                    else {
+                        if (document.getElementById("portrait-modal").style.display === "block")
+                            $('.close').click()
                     }
                 }
 
