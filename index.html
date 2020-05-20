@@ -17,6 +17,9 @@
 </head>
 
 <body>
+
+
+
     <!-- Tabs holder -->
     <div class="tabs-holder">
         <!-- Nav tabs -->
@@ -122,6 +125,35 @@
             <h3>Prize center</h3>
         </div>
     </div>
+    <!--modal-->
+
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#portrait-modal" id="portrait-btn"
+        style="display: none;">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="portrait-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Ignore and Close</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- BOOTSTRAP JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -137,13 +169,20 @@
     </script>
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
-    <!-- responsive tabs -->
-    <script
-        src="https://cdn.rawgit.com/InventPartners/bootstrap-responsive-tabs/master/jquery.responsivetabs.js"></script>
+
     <script>
-        $(function () {
-            $('.nav-tabs').responsiveTabs();
-        });
+
+        if (window.matchMedia("(orientation: portrait)").matches) {
+            // you're in PORTRAIT mode
+            $('#portrait-btn').click()
+        }
+
+        window.addEventListener("orientationchange", function () {
+            if (window.orientation === 0)
+                $('#portrait-btn').click()
+
+        }, false);
+
     </script>
 </body>
 

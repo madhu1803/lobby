@@ -1,83 +1,84 @@
 .tabs-holder {
-    background: #002F9D;
-    height: 70px !important;
-
+  background: #002f9d;
+  height: 70px !important;
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link {
-    background-color: transparent;
-    border: none;
-    color: white;
-    border-right: 0.1px solid #F5FFFA;
-    border-radius: 0;
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-right: 0.1px solid #f5fffa;
+  border-radius: 0;
 }
 
 .nav-tabs .nav-link i {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 html,
 body {
-    margin: 0;
-    padding: 0;
-    height: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.tab-content>.tab-pane {
-    margin: 0;
-    padding: 0;
+.tab-content > .tab-pane {
+  margin: 0;
+  padding: 0;
 }
-
-
 
 .nav-item {
-    display: inline-block;
-
+  display: inline-block;
 }
-
 
 /* scrollable tab */
 .nav.nav-tabs {
-    text-align: center;
-    border: none;
-    overflow: auto;
-    white-space: nowrap;
-    display: block;
-    padding: 1% 0;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
+  text-align: center;
+  border: none;
+  overflow: auto;
+  white-space: nowrap;
+  display: block;
+  padding: 1% 0;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-link {
-    border: none;
-    color: white;
-    border-radius: 0;
-    padding: 0 15px;
+  border: none;
+  color: white;
+  border-radius: 0;
+  padding: 0 15px;
 }
 
 /* hover  */
 .nav-link:hover {
-    background: white;
-    color: #002F9D !important;
-    border: 10px solid white;
-
-
+  background: white;
+  color: #002f9d !important;
+  border: 10px solid white;
 }
 
 .nav-link.active:hover {
-    background: white;
-    color: #002F9D !important;
-    border: 10px solid white;
+  background: white;
+  color: #002f9d !important;
+  border: 10px solid white;
 }
 
 /* img */
 .img-fluid {
-    display: block;
-    width: 100%;
-    height: 100%;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
+
+@media screen and (orientation: portrait) {
+}
+
+/* @media only screen and (max-width: 600px) {
+  body {
+    transform: rotate(-90deg) translateY(100%);
+  }
+} */
