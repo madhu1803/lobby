@@ -157,6 +157,11 @@
                 // you're in PORTRAIT mode
                 $('#portrait-btn').click()
             }
+
+            if (window.matchMedia("(orientation: landscape)").matches) {
+                if (document.getElementById("portrait-modal").style.display === "block")
+                    $('.close').click()
+            }
             //event listener for orientation 
             window.addEventListener("orientationchange", function () {
                 if (window.matchMedia("(orientation: portrait)").matches) {
