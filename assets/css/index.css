@@ -64,7 +64,7 @@ body {
 .nav-link:hover {
     background: white;
     color: #002F9D !important;
-    padding: 1px;
+    border: 10px solid white;
 
 
 }
@@ -72,6 +72,7 @@ body {
 .nav-link.active:hover {
     background: white;
     color: #002F9D !important;
+    border: 10px solid white;
 }
 
 /* img */
