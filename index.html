@@ -180,35 +180,35 @@
                 // you're in PORTRAIT mode
                 $('#portrait-btn').click()
             }
-            // resize window to desktop - modal closes
-            $(window).resize(function () {
-                if ($(window).width() <= 768 && $(window).orientation() == 0) {
-                    if (document.getElementById("portrait-modal").style.display === "block")
-                        $('.close').click()
-                }
-                else if ($(window).width() <= 768 && $(window).orientation() != 0) {
-                    $('#portrait-btn').click()
-                }
-                else if ($(window).width() >= 768) {
-                    if (document.getElementById("portrait-modal").style.display === "block")
-                        $('.close').click()
-                }
 
-            });
             // resize window to desktop - modal closes
             // $(window).resize(function () {
-            //     if (window.orientation != 0) {
+            //     if ($(window).width() <= 768 && window.matchMedia("(orientation: portrait)").matches) {
+            //         $('#portrait-btn').click()
             //         if (document.getElementById("portrait-modal").style.display === "block")
             //             $('.close').click()
             //     }
-            //     else if (window.orientation === 0) {
-            //         $('#portrait-btn').click()
+            //     else if ($(window).width() <= 768 && $(window).orientation() == 0) {
+
             //     }
-            //     else {
+            //     else if ($(window).width() >= 768 && $(window).orientation() == 0) {
+            //         if (document.getElementById("portrait-modal").style.display === "block")
+            //             $('.close').click()
+            //     }
+            //     else
             //         alert("error")
-            //     }
 
             // });
+            $(window).resize(function () {
+                if ($(window).width() >= 768) {
+                    if (document.getElementById("portrait-modal").style.display === "block")
+                        $('.close').click()
+                }
+                else if ($(window).width() <= 768) {
+                    $('#portrait-btn').click()
+                }
+
+            });
 
             window.addEventListener("orientationchange", function () {
                 if (window.orientation === 0)
