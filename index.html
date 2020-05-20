@@ -140,7 +140,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                    <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -180,6 +180,31 @@
                 // you're in PORTRAIT mode
                 $('#portrait-btn').click()
             }
+            // resize window to desktop - modal closes
+            $(window).resize(function () {
+                if ($(window).width() >= 768) {
+                    if (document.getElementById("portrait-modal").style.display === "block")
+                        $('.close').click()
+                }
+                else if ($(window).width() <= 768) {
+                    $('#portrait-btn').click()
+                }
+
+            });
+            // resize window to desktop - modal closes
+            // $(window).resize(function () {
+            //     if (window.orientation != 0) {
+            //         if (document.getElementById("portrait-modal").style.display === "block")
+            //             $('.close').click()
+            //     }
+            //     else if (window.orientation === 0) {
+            //         $('#portrait-btn').click()
+            //     }
+            //     else {
+            //         alert("error")
+            //     }
+
+            // });
 
             window.addEventListener("orientationchange", function () {
                 if (window.orientation === 0)
