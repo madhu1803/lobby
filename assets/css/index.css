@@ -77,8 +77,13 @@ body {
 @media screen and (orientation: portrait) {
 }
 
-/* @media only screen and (max-width: 600px) {
-  body {
-    transform: rotate(-90deg) translateY(100%);
-  }
-} */
+.modal-header {
+  background-color: #002f9d !important;
+  color: white;
+}
+.jumbotron {
+  background-image: url("https://ticketing.sarcontech.com/assets/images/giphy.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 50%;
+}
