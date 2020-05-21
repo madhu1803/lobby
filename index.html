@@ -152,32 +152,38 @@
         <script src="./assets/js/main.js"></script>
 
         <script>
+            // alert(window.screen.orientation)
             //  on portrait -display modal 
             if (window.matchMedia("(orientation: portrait)").matches) {
                 // you're in PORTRAIT mode
                 $('#portrait-btn').click()
             }
-
+            // on landscape mode - close modal
             if (window.matchMedia("(orientation: landscape)").matches) {
                 if (document.getElementById("portrait-modal").style.display === "block")
                     $('.close').click()
             }
-            //event listener for orientation 
-            window.addEventListener("orientationchange", function () {
-                if (window.matchMedia("(orientation: portrait)").matches) {
-                    // you're in PORTRAIT mode
-                    $('#portrait-btn').click()
-                }
-                else {
-                    if (document.getElementById("portrait-modal").style.display === "block")
-                        $('.close').click()
-                }
-            }, false);
+            // //event listener for orientation
+            // window.addEventListener("orientationchange", function () {
+            //     if (window.matchMedia("(orientation: portrait)").matches) {
+            //         // you're in PORTRAIT mode
+
+            //         $('#portrait-btn').click()
+            //     }
+            //     else {
+
+            //         if (document.getElementById("portrait-modal").style.display === "block")
+            //             $('.close').click()
+            //     }
+            // }, false);
+
 
             $(window).resize(function () {
                 if ($(window).width() >= 768) {
+
                     if (document.getElementById("portrait-modal").style.display === "block")
                         $('.close').click()
+
                 }
                 else {
                     if (window.matchMedia("(orientation: portrait)").matches) {
@@ -188,7 +194,6 @@
                 }
 
             });
-
         </script>
 </body>
 

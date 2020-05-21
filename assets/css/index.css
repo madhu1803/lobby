@@ -23,7 +23,7 @@ body {
   height: 100%;
 }
 
-.tab-content > .tab-pane {
+.tab-content>.tab-pane {
   margin: 0;
   padding: 0;
 }
@@ -74,13 +74,25 @@ body {
   height: 100%;
 }
 
+@media screen and (orientation: landscape) {
+
+  #portrait-modal {
+    display: none;
+  }
+}
+
 @media screen and (orientation: portrait) {
+
+  #portrait-modal {
+    display: block;
+  }
 }
 
 .modal-header {
   background-color: #002f9d !important;
   color: white;
 }
+
 .jumbotron {
   background-image: url("https://ticketing.sarcontech.com/assets/images/giphy.gif");
   background-position: center;
