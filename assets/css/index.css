@@ -51,20 +51,20 @@ body {
   border: none;
   color: white;
   border-radius: 0;
-  padding: 0 15px;
+  padding: 10px 15px;
 }
 
 /* hover  */
 .nav-link:hover {
   background: white;
   color: #002f9d !important;
-  border: 10px solid white;
+
 }
 
 .nav-link.active:hover {
   background: white;
   color: #002f9d !important;
-  border: 10px solid white;
+
 }
 
 /* img */
@@ -93,9 +93,8 @@ body {
   color: white;
 }
 
-.jumbotron {
-  background-image: url("https://ticketing.sarcontech.com/assets/images/giphy.gif");
-  background-position: center;
-  background-repeat: no-repeat;
-  padding: 50%;
+.portrait-image {
+  height: 200px;
+  width: 200px;
+  margin: 0 !important;
 }
