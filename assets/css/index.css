@@ -108,3 +108,7 @@ body {
 .modal-body {
   padding: 0;
 }
+
+.modal-content {
+  height: 400px;
+}
