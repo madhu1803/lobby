@@ -82,9 +82,8 @@ body {
 /* portrait modal  */
 
 .modal-header {
-  /* background-color: #2c5ed3 !important; */
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
   background-color: white !important;
   color: #2c5ed3;
   padding-bottom: 0;
@@ -120,8 +119,6 @@ body {
 
 }
 
-
-
 /* notification modal */
 #notification-modal-dialog {
   min-width: 280px;
@@ -133,6 +130,11 @@ body {
   /* top: 50px; */
 }
 
+#notification-modal-header {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+
+}
 
 .notification-username {
   background-color: #2C5ED3;
