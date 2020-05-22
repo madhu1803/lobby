@@ -109,21 +109,19 @@
                     data-toggle="tab"> -->
 
                 <!-- video -->
-                <area shape="rect" style="cursor: pointer;" coords="832,180,1084,324" href="#info_desk" class="nav-link"
-                    data-toggle="tab">
+                <area data-fancybox="gallery1" shape="rect" style="cursor: pointer;" coords="832,180,1084,324" href="https://www.youtube.com/watch?v=72S7O0DIgS4">
 
                 <!-- help desk -->
                 <area shape="rect" style="cursor: pointer;" coords="778,790,1180,920" onclick="switchTo('info_desk')">
 
                 <!-- speaker lounge -->
-                <area shape="rect" style="cursor: pointer;" coords="472,696,594,774" href="#crayonIbm" class="nav-link"
-                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="472,696,594,774" href="#crayonIbm">
 
                 <!-- ciso boardroom lounge -->
                 <area shape="rect" style="cursor: pointer;" coords="308,826,444,910" href="#crayonIbm">
 
                 <!-- network lounge -->
-                <area shape="rect" style="cursor: pointer;" coords="1364,820,1496,906" href="#crayonIbm">
+                <area shape="rect" style="cursor: pointer;" coords="1364,820,1496,906" onclick="switchTo('lounge')">
 
                 <!-- exhibitor -->
                 <area shape="rect" style="cursor: pointer;" coords="694,568,896,600"
@@ -133,16 +131,13 @@
                 <area shape="rect" style="cursor: pointer;" coords="958,572,1190,600" onclick="switchTo('auditorium')">
 
                 <!-- event guide -->
-                <area shape="rect" style="cursor: pointer;" coords="662,936,786,1006" href="#Agenda" class="nav-link"
-                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="662,936,786,1006" href="#Agenda">
 
                 <!-- agenda -->
-                <area shape="rect" style="cursor: pointer;" coords="878,936,994,1006" href="#EventGuide"
-                    class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="878,936,994,1006" href="#EventGuide">
 
                 <!-- faq -->
-                <area shape="rect" style="cursor: pointer;" coords="1080,936,1200,1006" href="#FAQ" class="nav-link"
-                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1080,936,1200,1006" href="#FAQ">
             </map>
         </div>
         <!-- Auditorium Panel -->
@@ -156,14 +151,17 @@
             <img src="https://storage.googleapis.com/sarconasiabucket/trescon/exhibition-hall.jpg" width="100%"
                 height="100%" class="img-fluid main-background-img" usemap="#mapname2">
             <map name="mapname2">
-                <area shape="rect" style="cursor: pointer;" coords="221,628,535,735" href="#sonicWall" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="814,634,1129,736" href="#IBM" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1406,629,1720,736" href="#Zoho" class="nav-link"
-                    data-toggle="tab">
+                <!-- sonicWall -->
+                <area shape="rect" style="cursor: pointer;" coords="221,628,535,735" onclick="switchTo('sonicWall')">
+
+                <!-- crayon -->
+                <area shape="rect" style="cursor: pointer;" coords="814,634,1129,736" onclick="switchTo('crayonIbm')">
+
+                <!-- manange engine -->
+                <area shape="rect" style="cursor: pointer;" coords="1406,629,1720,736" onclick="switchTo('manageEngine')">
             </map>
         </div>
+
         <!-- Lounge Panel -->
         <div id="lounge" class="container-fluid tab-pane fade">
             <img src="https://storage.googleapis.com/sarconasiabucket/trescon/lounge-min.jpg"
@@ -175,28 +173,18 @@
             <img src="https://storage.googleapis.com/sarconasiabucket/trescon/help-desk.jpg"
                 class="img-fluid main-background-img" usemap="#mapname4">
             <map name="mapname4">
-                <area shape="rect" style="cursor: pointer;" coords="235,547,425,601" href="#IBM" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="236,628,426,678" href="#Sonic" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="237,689,425,743" href="#Zoho" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="474,549,664,601" href="#IBM" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="473,629,665,668" href="#Sonic" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="475,686,663,745" href="#Zoho" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1311,457,1540,600" href="#TV" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1027,510,1259,694" href="#Help" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1253,776,1413,873" href="#Agenda" class="nav-link"
-                    data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1423,788,1575,875" href="#EventGuide"
-                    class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1585,788,1739,881" href="#FAQ" class="nav-link"
-                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="235,547,425,601" onclick="switchTo('crayonIbm')">
+                <area shape="rect" style="cursor: pointer;" coords="236,628,426,678" onclick="switchTo('sonicWall')">
+                <area shape="rect" style="cursor: pointer;" coords="237,689,425,743" onclick="switchTo('manageEngine')">
+                <area shape="rect" style="cursor: pointer;" coords="474,549,664,601" onclick="switchTo('crayonIbm')">
+                <area shape="rect" style="cursor: pointer;" coords="473,629,665,668" onclick="switchTo('sonicWall')">
+                <area shape="rect" style="cursor: pointer;" coords="475,686,663,745" onclick="switchTo('manageEngine')">
+
+                <area data-fancybox="gallery2" style="cursor: pointer;" coords="1311,457,1540,600" href="https://www.youtube.com/watch?v=72S7O0DIgS4" alt="alttext">
+                <area shape="rect" style="cursor: pointer;" coords="1027,510,1259,694" href="#Help">
+                <area shape="rect" style="cursor: pointer;" coords="1253,776,1413,873" href="#Agenda">
+                <area shape="rect" style="cursor: pointer;" coords="1423,788,1575,875" href="#EventGuide">
+                <area shape="rect" style="cursor: pointer;" coords="1585,788,1739,881" href="#FAQ">
             </map>
         </div>
         <!-- Resources Panel -->
