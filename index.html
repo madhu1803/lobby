@@ -17,6 +17,7 @@
 </head>
 
 <body>
+    <!-- Navigation Bar Start -->
     <div class="tabs-holder">
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
@@ -73,18 +74,20 @@
             </li>
             <!-- hidden tabs -->
             <li class="nav-item">
-                <a type="button" class="btn btn-outline-light" id="tab-btn" onclick="openAnnouncementsModal()"
-                    style="margin-left: 10px;">
+                <a type="button" class="btn btn-outline-light tab-action-btn" onclick="toggleAnnouncementsModal()">
                     Announcements
                 </a>
             </li>
             <li class="nav-item">
-                <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="tab" onclick=""> Logout
-                </a> </li>
+                <a type="button" class="btn btn-outline-light tab-action-btn" data-toggle="tab">
+                    Logout
+                </a>
+            </li>
         </ul>
     </div>
+    <!-- Navigation Bar End -->
 
-    <!-- Tab panes -->
+    <!-- Tab Panes Start -->
     <div class="tab-content">
         <!-- Lobby Panel -->
         <div id="lobby" class="container-fluid tab-pane active">
@@ -120,7 +123,8 @@
                 <area shape="rect" style="cursor: pointer;" coords="1364,820,1496,906" onclick="switchTo('lounge')">
 
                 <!-- exhibitor -->
-                <area shape="rect" style="cursor: pointer;" coords="694,568,896,600" onclick="switchTo('exhibition_hall')">
+                <area shape="rect" style="cursor: pointer;" coords="694,568,896,600"
+                    onclick="switchTo('exhibition_hall')">
 
                 <!-- auditorium -->
                 <area shape="rect" style="cursor: pointer;" coords="958,572,1190,600" onclick="switchTo('auditorium')">
@@ -137,7 +141,8 @@
         </div>
         <!-- Auditorium Panel -->
         <div id="auditorium" class="container-fluid tab-pane fade">
-            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/auditorium.jpg" width="100%" height="100%" class="img-fluid main-background-img" usemap="#mapname1">
+            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/auditorium.jpg" width="100%" height="100%"
+                class="img-fluid main-background-img" usemap="#mapname1">
 
         </div>
         <!-- AI Expo Hall Panel -->
@@ -158,12 +163,14 @@
 
         <!-- Lounge Panel -->
         <div id="lounge" class="container-fluid tab-pane fade">
-            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/lounge-min.jpg" class="img-fluid main-background-img" usemap="#mapname3">
+            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/lounge-min.jpg"
+                class="img-fluid main-background-img" usemap="#mapname3">
         </div>
 
         <!-- Info Desk Panel -->
         <div id="info_desk" class="container-fluid tab-pane fade">
-            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/help-desk.jpg" class="img-fluid main-background-img" usemap="#mapname4">
+            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/help-desk.jpg"
+                class="img-fluid main-background-img" usemap="#mapname4">
             <map name="mapname4">
                 <area shape="rect" style="cursor: pointer;" coords="235,547,425,601" onclick="switchTo('crayonIbm')">
                 <area shape="rect" style="cursor: pointer;" coords="236,628,426,678" onclick="switchTo('sonicWall')">
@@ -182,6 +189,7 @@
         <!-- Resources Panel -->
         <div id="resources" class="container-fluid tab-pane fade">
             <h3>Resources</h3>
+            <button type="button" class="btn-primary" id="events-modal-btn">Events</button>
         </div>
         <!-- Genenral chat Panel -->
         <div id="general_chat" class="container-fluid tab-pane fade">
@@ -199,11 +207,10 @@
             <img src="https://storage.googleapis.com/sarconasiabucket/trescon/booth_manageengine.jpg" class="img-fluid"
                 usemap="#mapname7">
         </div>
-
     </div>
+    <!-- Tab Panes End -->
+
     <!--modal-->
-
-
     <!-- landscape change alert Modal -->
     <div class="modal fade" id="portrait-modal" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal" role="document">
@@ -231,13 +238,13 @@
             <div class="modal-header" id="notification-modal-header">
                 <h5 class="modal-title">Announcements</h5>
                 <button id="minimize-btn"> <i class='fa fa-minus'></i> </button>
-                <button type="button" class="close" onclick="CloseAnnouncementsModal()">
+                <button type="button" class="close" onclick="toggleAnnouncementsModal()">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body notification-modal-class" id="notification-modal-body">
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                <div class="list-group" id="list-messages">
+                    <!-- <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
                             <div class="media w-100 mb-3">
                                 <div class="media-body">
@@ -249,7 +256,7 @@
                                             is a new approach all
                                             solutions</p>
                                     </div>
-                                    <p class="small text-muted">12:00 PM | Aug 13</p>
+                                    <p class="small text-muted  ml-3">12:00 PM | Aug 13</p>
                                 </div>
                             </div>
                         </div>
@@ -266,7 +273,7 @@
                                             is a new approach all
                                             solutions</p>
                                     </div>
-                                    <p class="small text-muted">12:00 PM | Aug 13</p>
+                                    <p class="small text-muted ml-3">12:00 PM | Aug 13</p>
                                 </div>
                             </div>
                         </div>
@@ -283,7 +290,7 @@
                                             is a new approach all
                                             solutions</p>
                                     </div>
-                                    <p class="small text-muted">12:00 PM | Aug 13</p>
+                                    <p class="small text-muted  ml-3">12:00 PM | Aug 13</p>
                                 </div>
                             </div>
                         </div>
@@ -296,15 +303,214 @@
                                         <p class="text-small mb-0 ">Ashish chaudary</p>
                                     </div>
                                     <div class="bg-white rounded py-2 px-3 mb-2">
-                                        <p class="text-small mb-0 text-muted">Test which
+                                        <p class="text-small mb-0 text-muted ">Test which
                                             is a new approach all
                                             solutions</p>
                                     </div>
-                                    <p class="small text-muted">12:00 PM | Aug 13</p>
+                                    <p class="small text-muted ml-3">12:00 PM | Aug 13</p>
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--event modal-->
+
+    <div class="modal-dialog event-modal-dialog d-none" role="document" id="eventmodal">
+        <div class="modal-content">
+            <div class="modal-header event-modal-header">
+                <h5 class="modal-title">Events List</h5>
+                <button type="button" class="close" id="close-event-btn" onclick="eventmodal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="even-modal-body">
+
+                <div class="container">
+                    <div class="about-heading">
+                        <h3 class="title text-center">
+                            <span class="about">Events</span>
+                            <span class="sessions">List</span>
+                            <p class="lead">This is a modified jumbotron that
+                                occupies the
+                                entire horizontal
+                                space of
+                                its
+                                parent.</p>
+                        </h3>
+                    </div>
+                </div>
+                <div class=" container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="cls">Timings</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <h4>Agenda</h4>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>9.00 AM &ndash; 10.00 AM</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-primary" role="alert">INAUGURATION</div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item ">Welcome Address :<strong> Dr. Dhanasekaran, Chairman ,
+                                        IET-CLN</strong></li>
+                                <li class="list-group-item">Chief Guest Address &ndash; <strong>TBC</strong></li>
+                                <li class="list-group-item">Special Guest - <strong>TBC</strong></li>
+                                <li class="list-group-item">Inauguration of stalls</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>10.10 AM &ndash; 10.40 AM</h4>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-warning" role="alert">Super Key Note</div>
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>Nokia</strong></li>
+                                <li class="list-group-item"><strong>TBC</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>10.40 AM - 11.00 AM</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-success" role="alert">Tea Break</div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>11.00am to 12.30pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-danger" role="alert">Panel Discussion -1 on &ldquo;eMobility&rdquo;
+                            </div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item">Moderator: TBC, Bosch</li>
+                                <li class="list-group-item">TBC, BOSCH</li>
+                                <li class="list-group-item">TBC, Urban Mobility Panel</li>
+                                <li class="list-group-item">TBC, Rural Mobility Panel</li>
+                                <li class="list-group-item">TBC, Logistics and Freight Panel</li>
+                                <li class="list-group-item">TBC</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>1.30 pm to 1.50 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-warning" role="alert">Key Note -1 : &ldquo;Fintech&rdquo;, TBC,
+                                Paypal
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>1.50 pm to 2.10 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-primary" role="alert">Key Note -2 : TBC</div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>2.10 pm to 3.40 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-info" role="alert">Panel Discussion -2 on &ldquo;Smart Cities &amp;
+                                Industry
+                                4.0-Moderator: TBC&rdquo;</div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item">TBC, Nokia Networks and Solutions Ltd.</li>
+                                <li class="list-group-item">Mr. Srinivasan, VP, GAVS Technologies</li>
+                                <li class="list-group-item">TBC (From STPI)</li>
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>3.40 pm to 4.00 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-success" role="alert">Tea Break</div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>4.00 pm to 5.30 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-success" role="alert">Panel Discussion -3 on &ldquo;Topic
+                                (TBC)&rdquo;-
+                                Moderator: TBC</div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>5.30 pm to 6.00 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-info" role="alert">Valedictory function</div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>6.00 pm to 6.15 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-info" role="alert">Vote of Thanks and Takeaways</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -319,12 +525,22 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="https://ticketing.sarcontech.com/assets/javascript/imageMapResizer.min.js">
     </script>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+    <script src="assets/js/init.js"></script>
+
+    <!-- Scripts for Firebase Chat Functionality -->
+    <script src="assets/js/recieveNotifications.js"></script>
+
     <script type="text/javascript">
         setInterval(function () { $('map').imageMapResize(); }, 1000);
 
         function switchTo(tabName) {
-            window.scrollTo(0, 0);
-            $('#myTab a[href="#'+tabName+'"]').tab('show');
+            $('#myTab a[href="#' + tabName + '"]').tab('show');
         }
     </script>
     <script src="./assets/js/main.js"></script>
