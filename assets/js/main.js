@@ -37,24 +37,16 @@ $("#minimize-btn").click(function () {
 //on load minimize notification modal
 $("#minimize-btn").click()
 
-// close modal notification
-function CloseAnnouncementsModal() {
-    document.getElementById('notification-modal-dialog').style.display = 'none'
-}
 
-function openAnnouncementsModal() {
-    document.getElementById('notification-modal-dialog').style.display = 'block'
-}
+function toggleAnnouncementsModal() {
 
+    $('#notification-modal-dialog').toggleClass('d-none')
+}
 //image resizer 
 setInterval(function () {
     $('map').imageMapResize();
 }, 1000);
 
-// modal display:none onload
-// $(document).ready(function () {
-//     document.getElementById("eventmodal").style.display = 'none';
-// });
 //close even modal
 function eventmodal() {
     $("#eventmodal").toggleClass('d-none')

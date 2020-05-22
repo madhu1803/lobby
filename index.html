@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <!-- Navigation Bar Start -->
     <div class="tabs-holder">
         <ul class="nav nav-tabs" role="tablist">
             <li class="nav-item">
@@ -52,16 +53,18 @@
                 </a>
             </li>
             <li class="nav-item">
-                <a type="button" class="btn btn-outline-light" id="tab-btn" onclick="openAnnouncementsModal()"
-                    style="margin-left: 10px;">
+                <a type="button" class="btn btn-outline-light tab-action-btn" onclick="toggleAnnouncementsModal()">
                     Announcements
                 </a>
             </li>
             <li class="nav-item">
-                <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="tab" onclick=""> Logout
-                </a> </li>
+                <a type="button" class="btn btn-outline-light tab-action-btn" data-toggle="tab">
+                    Logout
+                </a>
+            </li>
         </ul>
     </div>
+    <!-- Navigation Bar End -->
 
     <!-- Tab panes -->
     <div class="tab-content">
@@ -183,7 +186,7 @@
             <div class="modal-header" id="notification-modal-header">
                 <h5 class="modal-title">Announcements</h5>
                 <button id="minimize-btn"> <i class='fa fa-minus'></i> </button>
-                <button type="button" class="close" onclick="CloseAnnouncementsModal()">
+                <button type="button" class="close" onclick="toggleAnnouncementsModal()">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>

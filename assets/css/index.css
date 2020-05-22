@@ -5,7 +5,6 @@ body {
   height: 100%;
 }
 
-/* tabs */
 .tabs-holder {
   background: #2c5ed3;
   height: 70px !important;
@@ -33,7 +32,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-/* hover  */
 .tabs-holder .nav-tabs .nav-link:hover,
 .tabs-holder .nav-tabs .nav-link.active:hover {
   background: white;
@@ -51,6 +49,15 @@ body {
 .tab-content>.tab-pane {
   margin: 0;
   padding: 0;
+}
+
+.tabs-holder .nav-tabs .nav-item .tab-action-btn {
+  color: white;
+  margin-right: 20px !important;
+}
+
+.tabs-holder .nav-tabs .nav-item .tab-action-btn:hover {
+  color: #2C5ED3 !important;
 }
 
 /* img */
@@ -154,14 +161,7 @@ body {
 
 }
 
-#tab-btn {
-  color: white;
-  margin-right: 20px !important;
-}
 
-#tab-btn:hover {
-  color: #2C5ED3 !important;
-}
 
 .event-modal-dialog {
   max-width: 90% !important;
