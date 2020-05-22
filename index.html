@@ -57,6 +57,12 @@
                     <i class="fas fa-comments"></i>General Chat
                 </a>
             </li>
+            <li class="nav-item"> <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="modal"
+                    data-target="#notification-modal-dialog" style="margin-left: 10px;">
+                    Announcements </a>
+            </li>
+            <li class="nav-item"> <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="tab"
+                    onclick=""> Logout </a> </li>
         </ul>
     </div>
 
@@ -66,8 +72,9 @@
         <div id="lobby" class="container-fluid tab-pane active">
             <img src="https://storage.googleapis.com/sarconasiabucket/trescon/lobby.jpg" class="img-fluid main-background-img" usemap="#mapname">
             <map name="mapname">
-                <area shape="rect" style="cursor: pointer;" coords="832,182,1096,330" href="#auditorium" class="nav-link" data-toggle="tab">
-                <area  shape="rect" style="cursor: pointer;" coords="1138,653,1450,771" href="#">
+                <area shape="rect" style="cursor: pointer;" coords="832,182,1096,330" href="#crayonIbm" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1138,653,1450,771" href="#">
                 <area shape="rect" style="cursor: pointer;" coords="1546,653,1857,771" href="#">
             </map>
         </div>
@@ -78,11 +85,15 @@
         </div>
         <!-- AI Expo Hall Panel -->
         <div id="ai_expo" class="container-fluid tab-pane fade">
-            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/exhibition-hall.jpg" width="100%" height="100%" class="img-fluid" usemap="#mapname2">
+            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/exhibition-hall.jpg" width="100%"
+                height="100%" class="img-fluid" usemap="#mapname2">
             <map name="mapname2">
-                <area shape="rect" style="cursor: pointer;" coords="221,628,535,735" href="#sonicWall" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="814,634,1129,736" href="#IBM" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1406,629,1720,736" href="#Zoho" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="221,628,535,735" href="#sonicWall" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="814,634,1129,736" href="#IBM" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1406,629,1720,736" href="#Zoho" class="nav-link"
+                    data-toggle="tab">
             </map>
         </div>
         <!-- Lounge Panel -->
@@ -93,6 +104,19 @@
         <!-- Info Desk Panel -->
         <div id="info_desk" class="container-fluid tab-pane fade">
             <img src="https://storage.googleapis.com/sarconasiabucket/trescon/help-desk.jpg" class="img-fluid" usemap="#mapname4">
+            <map name="mapname4">
+                <area shape="rect" style="cursor: pointer;" coords="235,547,425,601" href="#IBM" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="236,628,426,678" href="#Sonic" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="237,689,425,743" href="#Zoho" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="474,549,664,601" href="#IBM" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="473,629,665,668" href="#Sonic" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="475,686,663,745" href="#Zoho" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1311,457,1540,600" href="#TV" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1027,510,1259,694" href="#Help" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1253,776,1413,873" href="#Agenda" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1423,788,1575,875" href="#EventGuide" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1585,788,1739,881" href="#FAQ" class="nav-link" data-toggle="tab">
+            </map>
         </div>
         <!-- Resources Panel -->
         <div id="resources" class="container-fluid tab-pane fade">
@@ -139,16 +163,16 @@
     </div>
     <!--modal-->
 
-    <div class="modal-dialog modal-dialog-scrollable" role="document" id="notification-modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable " role="document" id="notification-modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Announcement</h5>
+                <h5 class="modal-title">Announcements</h5>
                 <button id="minimize-btn"> <i class='fa fa-minus'></i> </button>
                 <button type="button" class="close" onclick="notificationModal()">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-block" id="notification-modal-body">
+            <div class="modal-body d-block notification-modal-class" id="notification-modal-body">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
@@ -234,7 +258,7 @@
     <script type="text/javascript" src="https://ticketing.sarcontech.com/assets/javascript/imageMapResizer.min.js">
     </script>
     <script type="text/javascript">
-        setInterval(function(){ $('map').imageMapResize(); }, 1000);
+        setInterval(function () { $('map').imageMapResize(); }, 1000);
     </script>
     <!-- custom js -->
     <script src="./assets/js/main.js"></script>
@@ -245,6 +269,7 @@
         function notificationModal() {
             document.getElementById('notification-modal-dialog').style.display = 'none'
         }
+
         function alertUser() {
             // function to handle events from listner
 
@@ -269,14 +294,17 @@
         }
         // minimize modal
         $("#minimize-btn").click(function () {
-            if ($('.modal-body').hasClass('d-none')) {
-                $(".modal-body").removeClass('d-none');
-                $(".modal-body").addClass('d-block');
+            if ($('.notification-modal-class').hasClass('d-none')) {
+                $(".notification-modal-class").removeClass('d-none');
+                $(".notification-modal-class").addClass('d-block');
             } else {
-                $('.modal-body').removeClass('d-block');
-                $(".modal-body").addClass('d-none');
+                $('.notification-modal-class').removeClass('d-block');
+                $(".notification-modal-class").addClass('d-none');
             }
         });
+
+        $("#minimize-btn").click()
+
     </script>
 </body>
 
