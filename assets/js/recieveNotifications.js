@@ -148,15 +148,9 @@ function generate(timestamp, name, text, div){
 
 // Displays a Message in the UI.
 function displayMessage(id, timestamp, name, user_id, text, picUrl, imageUrl) {
-    if(user_id == getUserId()){
     var div = document.getElementById(id) || createAndInsertMessage(id, timestamp);
     console.log("Timestamp Display ",timestamp);
     generate(timestamp, name, text, div);
-    }else{
-      var div = document.getElementById(id) || createAndInsertMessage(id, timestamp, 1);
-      generate(timestamp, name, text, div);
-    }
-
 }
 // Checks that the Firebase SDK has been correctly setup and configured.
 function checkSetup() {
