@@ -41,3 +41,8 @@ $("#minimize-btn").click()
 function CloseAnnouncementsModal() {
     document.getElementById('notification-modal-dialog').style.display = 'none'
 }
+
+//image resizer 
+setInterval(function () {
+    $('map').imageMapResize();
+}, 1000);
