@@ -116,7 +116,7 @@ function monthInWords(month){
   
 function generate(timestamp, name, text, div){
   // div.querySelector('.name').textContent = name;
-    var messageElement = div.querySelector('.text_message');
+    var messageElement = div.querySelector('.text-message');
     var timeElement = div.querySelector('.time');
     var usernameElement = div.querySelector('.chat-username');
   
