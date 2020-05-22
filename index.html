@@ -133,6 +133,7 @@
         <!-- Resources Panel -->
         <div id="resources" class="container-fluid tab-pane fade">
             <h3>Resources</h3>
+            <button type="button" class="btn-primary" id="events-modal-btn">Events</button>
         </div>
         <!-- Genenral chat Panel -->
         <div id="general_chat" class="container-fluid tab-pane fade">
@@ -256,6 +257,215 @@
                             </div>
                         </div>
                     </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--event modal-->
+
+    <div class="modal-dialog event-modal-dialog d-none" role="document" id="eventmodal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Events List</h5>
+                <button type="button" class="close" onclick="eventmodal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body" id="even-modal-body">
+
+                <div class="container">
+                    <div class="about-heading">
+                        <h3 class="title text-center" style="font-weight: 900;
+                font-size: 42px;">
+                            <span class="about">Events</span>
+                            <span class="sessions" style="color: #DE3438;">List</span>
+                            <p class="lead" style="color: #DE3438; margin:2% auto;">This is a modified jumbotron that
+                                occupies the
+                                entire horizontal
+                                space of
+                                its
+                                parent.</p>
+                        </h3>
+                    </div>
+
+
+                </div>
+
+                <div class=" container">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 class="cls">Timings</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h4>Agenda</h4>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>9.00 AM &ndash; 10.00 AM</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-primary" role="alert">INAUGURATION</div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item ">Welcome Address :<strong> Dr. Dhanasekaran, Chairman ,
+                                        IET-CLN</strong></li>
+                                <li class="list-group-item">Chief Guest Address &ndash; <strong>TBC</strong></li>
+                                <li class="list-group-item">Special Guest - <strong>TBC</strong></li>
+                                <li class="list-group-item">Inauguration of stalls</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>10.10 AM &ndash; 10.40 AM</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-warning" role="alert">Super Key Note</div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item"><strong>Nokia</strong></li>
+                                <li class="list-group-item"><strong>TBC</strong></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>10.40 AM - 11.00 AM</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-success" role="alert">Tea Break</div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>11.00am to 12.30pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-danger" role="alert">Panel Discussion -1 on &ldquo;eMobility&rdquo;
+                            </div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item">Moderator: TBC, Bosch</li>
+                                <li class="list-group-item">TBC, BOSCH</li>
+                                <li class="list-group-item">TBC, Urban Mobility Panel</li>
+                                <li class="list-group-item">TBC, Rural Mobility Panel</li>
+                                <li class="list-group-item">TBC, Logistics and Freight Panel</li>
+                                <li class="list-group-item">TBC</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>1.30 pm to 1.50 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-warning" role="alert">Key Note -1 : &ldquo;Fintech&rdquo;, TBC,
+                                Paypal
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>1.50 pm to 2.10 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-primary" role="alert">Key Note -2 : TBC</div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>2.10 pm to 3.40 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-info" role="alert">Panel Discussion -2 on &ldquo;Smart Cities &amp;
+                                Industry
+                                4.0-Moderator: TBC&rdquo;</div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item">TBC, Nokia Networks and Solutions Ltd.</li>
+                                <li class="list-group-item">Mr. Srinivasan, VP, GAVS Technologies</li>
+                                <li class="list-group-item">TBC (From STPI)</li>
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>3.40 pm to 4.00 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-success" role="alert">Tea Break</div>
+                        </div>
+                    </div>
+
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>4.00 pm to 5.30 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-success" role="alert">Panel Discussion -3 on &ldquo;Topic
+                                (TBC)&rdquo;-
+                                Moderator: TBC</div>
+
+                            <ul class="list-group">
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item">TBC</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>5.30 pm to 6.00 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-info" role="alert">Valedictory function</div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4>6.00 pm to 6.15 pm</h4>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-info" role="alert">Vote of Thanks and Takeaways</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

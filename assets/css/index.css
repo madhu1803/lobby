@@ -162,3 +162,18 @@ body {
 #tab-btn:hover {
   color: #2C5ED3 !important;
 }
+
+.event-modal-dialog {
+  max-width: 90% !important;
+  width: 90% !important;
+  position: absolute;
+  top: 90px;
+  left: 5%;
+  bottom: 0;
+  z-index: 100000;
+}
+
+#even-modal-body {
+  max-height: 600px;
+  overflow: auto;
+}

@@ -50,3 +50,17 @@ function openAnnouncementsModal() {
 setInterval(function () {
     $('map').imageMapResize();
 }, 1000);
+
+// modal display:none onload
+// $(document).ready(function () {
+//     document.getElementById("eventmodal").style.display = 'none';
+// });
+//close even modal
+function eventmodal() {
+    $("#eventmodal").toggleClass('d-none')
+
+}
+//btn click
+$("#events-modal-btn").click(function () {
+    eventmodal()
+});
