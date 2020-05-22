@@ -19,6 +19,7 @@ function onMessageFormSubmit(e) {
       saveMessage(messageInputElement.value, companyNameElement.value).then(function() {
         // Clear message text field and re-enable the SEND button.
         messageInputElement.value = "";
+        companyNameElement.value = "";
         toggleButton();
       });
     }
@@ -26,7 +27,7 @@ function onMessageFormSubmit(e) {
 
 // Enables or disables the submit button depending on the values of the input fields
 function toggleButton() {
-    if (messageInputElement.value) {
+    if (messageInputElement.value && companyNameElement.value) {
       submitButtonElement.removeAttribute('disabled');
     } else {
       submitButtonElement.setAttribute('disabled', 'true');
@@ -47,6 +48,14 @@ var messageFormElement = document.getElementById('notification-send-box');
 var companyNameElement = document.getElementById('company-name')
 var messageInputElement = document.getElementById('notification-message');
 var submitButtonElement = document.getElementById('submit');
+
+// Toggle for the button.
+messageInputElement.addEventListener('keyup', toggleButton);
+messageInputElement.addEventListener('change', toggleButton);
+
+// Toggle for the button.
+companyNameElement.addEventListener('keyup', toggleButton);
+companyNameElement.addEventListener('change', toggleButton);
 
 // Saves message on form submit.
 messageFormElement.addEventListener('submit', onMessageFormSubmit);
