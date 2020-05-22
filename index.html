@@ -56,6 +56,12 @@
                     <i class="fas fa-comments"></i>General Chat
                 </a>
             </li>
+            <li class="nav-item"> <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="modal"
+                    data-target="#notification-modal-dialog" style="margin-left: 10px;">
+                    Announcements </a>
+            </li>
+            <li class="nav-item"> <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="tab"
+                    onclick=""> Logout </a> </li>
         </ul>
     </div>
 
@@ -65,7 +71,8 @@
         <div id="lobby" class="container-fluid tab-pane active">
             <img src="./assets/images/lobby.jpg" class="img-fluid main-background-img" usemap="#mapname">
             <map name="mapname">
-                <area shape="rect" style="cursor: pointer;" coords="733,657,1040,773" href="#">
+                <area data-fancybox="gallery1" shape="rect" style="cursor: pointer;" coords="832,182,1096,330"
+                    href="https://www.youtube.com/watch?v=zzkrCduEC7g">
                 <area shape="rect" style="cursor: pointer;" coords="1138,653,1450,771" href="#">
                 <area shape="rect" style="cursor: pointer;" coords="1546,653,1857,771" href="#">
             </map>
@@ -76,7 +83,8 @@
         </div>
         <!-- AI Expo Hall Panel -->
         <div id="ai_expo" class="container-fluid tab-pane fade">
-            <h3>expo hall</h3>
+            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/exhibition-hall.jpg" width="100%"
+                height="100%" class="img-fluid" usemap="#mapname">
         </div>
         <!-- Lounge Panel -->
         <div id="lounge" class="container-fluid tab-pane fade">
@@ -122,16 +130,16 @@
     </div>
     <!--modal-->
 
-    <div class="modal-dialog modal-dialog-scrollable" role="document" id="notification-modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable " role="document" id="notification-modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Announcement</h5>
+                <h5 class="modal-title">Announcements</h5>
                 <button id="minimize-btn"> <i class='fa fa-minus'></i> </button>
                 <button type="button" class="close" onclick="notificationModal()">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-block" id="notification-modal-body">
+            <div class="modal-body d-block notification-modal-class" id="notification-modal-body">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
@@ -228,6 +236,7 @@
         function notificationModal() {
             document.getElementById('notification-modal-dialog').style.display = 'none'
         }
+
         function alertUser() {
             // function to handle events from listner
 
@@ -252,14 +261,17 @@
         }
         // minimize modal
         $("#minimize-btn").click(function () {
-            if ($('.modal-body').hasClass('d-none')) {
-                $(".modal-body").removeClass('d-none');
-                $(".modal-body").addClass('d-block');
+            if ($('.notification-modal-class').hasClass('d-none')) {
+                $(".notification-modal-class").removeClass('d-none');
+                $(".notification-modal-class").addClass('d-block');
             } else {
-                $('.modal-body').removeClass('d-block');
-                $(".modal-body").addClass('d-none');
+                $('.notification-modal-class').removeClass('d-block');
+                $(".notification-modal-class").addClass('d-none');
             }
         });
+
+        $("#minimize-btn").click()
+
     </script>
 </body>
 
