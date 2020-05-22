@@ -122,7 +122,7 @@ function generate(timestamp, name, text, div){
   
     if (text) { // If the message is text.
       usernameElement.textContent = name;
-      messageElement.textContent = text;
+      messageElement.innerHTML = text;
       // Replace all line breaks by <br>.
       messageElement.innerHTML = messageElement.innerHTML.replace(/\n/g, '<br>');
       console.log("Timestamp Value: ",timestamp);

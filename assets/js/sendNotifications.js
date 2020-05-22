@@ -1,14 +1,25 @@
 // Saves a new message on the Firebase DB.
-function saveMessage(notificationMessage, companyName) {
+function saveMessage(notificationMessage, companyName, url='') {
     // Push a new message to Firebase.
+    if(url == '')
+      return firebase.firestore().collection('notifications').add({
+        user_id : "12345",
+        name: companyName,
+        text: notificationMessage,
+        timestamp: firebase.firestore.FieldValue.serverTimestamp()
+      }).catch(function(error) {
+        console.error('Error writing new message to database', error);
+      });
+    else
     return firebase.firestore().collection('notifications').add({
       user_id : "12345",
       name: companyName,
-      text: notificationMessage,
+      text: notificationMessage + '<br>' + '<a href="' + url + '">' + url + '</a>' ,
       timestamp: firebase.firestore.FieldValue.serverTimestamp()
     }).catch(function(error) {
       console.error('Error writing new message to database', error);
     });
+      
 }
 
 // Triggered when the send new message form is submitted.
@@ -16,12 +27,21 @@ function onMessageFormSubmit(e) {
     e.preventDefault();
     // Check that the user entered a message and is signed in.
     if (messageInputElement.value && companyNameElement) {
-      saveMessage(messageInputElement.value, companyNameElement.value).then(function() {
-        // Clear message text field and re-enable the SEND button.
-        messageInputElement.value = "";
-        companyNameElement.value = "";
-        toggleButton();
-      });
+      if(url.value == '')
+        saveMessage(messageInputElement.value, companyNameElement.value).then(function() {
+          // Clear message text field and re-enable the SEND button.
+          messageInputElement.value = "";
+          companyNameElement.value = "";
+          toggleButton();
+        });
+      else
+        saveMessage(messageInputElement.value, companyNameElement.value, url.value).then(function(){
+          // Clear message text field and re-enable the SEND button.
+          messageInputElement.value = "";
+          companyNameElement.value = "";
+          url.value = "";
+          toggleButton();
+        });
     }
 }
 
@@ -48,6 +68,7 @@ var messageFormElement = document.getElementById('notification-send-box');
 var companyNameElement = document.getElementById('company-name')
 var messageInputElement = document.getElementById('notification-message');
 var submitButtonElement = document.getElementById('submit');
+var url = document.getElementById('notification-url');
 
 // Toggle for the button.
 messageInputElement.addEventListener('keyup', toggleButton);
