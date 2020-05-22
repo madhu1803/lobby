@@ -11,21 +11,21 @@
 
 <body>
     <div class="container">
-        <form>
+        <form id="notification-send-box">
             <div class="form-group">
-                <label for="name">Enter name</label>
-                <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
-            </div>
-            <div class="form-group">
-                <label for="company-name">Enter Company Name</label>
+                <label for="company-name">Enter Company name</label>
                 <input type="text" class="form-control" id="company-name">
             </div>
             <div class="form-group">
-                <label for="password">Password</label>
-                <input type="password" class="form-control" id="password">
+                <label for="notification-message">Enter Notification Message</label>
+                <input type="text" class="form-control" id="notification-message">
+            </div>
+            <div class="form-group">
+                <label for="notification-url">Enter any links if you want to share with notification</label>
+                <input type="url" class="form-control" id="notification-url">
             </div>
 
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary" disabled id="submit">Submit</button>
         </form>
     </div>
 
@@ -34,6 +34,16 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-firestore.js"></script>
+    <script src="assets/js/init.js"></script>
+
+    <!-- Scripts for Firebase Chat Functionality -->
+    <script src="assets/js/sendNotifications.js"></script>
 </body>
 
 </html>
