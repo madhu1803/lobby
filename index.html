@@ -245,8 +245,8 @@
                 </button>
             </div>
             <div class="modal-body notification-modal-class" id="notification-modal-body">
-                <div class="list-group">
-                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                <div class="list-group" id="list-messages">
+                    <!-- <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
                             <div class="media w-100 mb-3">
                                 <div class="media-body">
@@ -313,7 +313,7 @@
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </div>
@@ -328,6 +328,19 @@
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript" src="https://ticketing.sarcontech.com/assets/javascript/imageMapResizer.min.js">
     </script>
+
+    <!-- Firebase Scripts -->
+    <script src="/__/firebase/7.14.4/firebase-app.js"></script>
+    <script src="/__/firebase/7.14.4/firebase-auth.js"></script>
+    <script src="/__/firebase/7.14.4/firebase-storage.js"></script>
+    <script src="/__/firebase/7.14.4/firebase-messaging.js"></script>
+    <script src="/__/firebase/7.14.4/firebase-firestore.js"></script>
+    <script src="/__/firebase/7.14.4/firebase-performance.js"></script>
+    <script src="/__/firebase/init.js"></script>
+
+    <!-- Scripts for Firebase Chat Functionality -->
+    <script src="js/notifications.js"></script>
+
     <script type="text/javascript">
         setInterval(function () { $('map').imageMapResize(); }, 1000);
 
