@@ -25,13 +25,7 @@ if (window.matchMedia("(orientation: portrait)").matches) {
 
 // minimize modal
 $("#minimize-btn").click(function () {
-    if ($('.notification-modal-class').hasClass('d-none')) {
-        $(".notification-modal-class").removeClass('d-none');
-        $(".notification-modal-class").addClass('d-block');
-    } else {
-        $('.notification-modal-class').removeClass('d-block');
-        $(".notification-modal-class").addClass('d-none');
-    }
+    $('.notification-modal-class').toggleClass('d-none')
 });
 
 //on load minimize notification modal
