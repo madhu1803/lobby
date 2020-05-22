@@ -73,8 +73,7 @@ body {
 }
 
 /* portrait modal  */
-
-.modal-header {
+.modal .modal-dialog .modal-content .modal-header {
   padding-top: 20px !important;
   padding-bottom: 20px !important;
   background-color: white !important;
@@ -83,18 +82,13 @@ body {
   border: none;
 }
 
-.portrait-image {
+.modal .modal-dialog .modal-content .modal-header .modal-body .portrait-image {
   height: 200px;
   width: 200px;
   margin: 0 !important;
 }
 
-.close {
-  color: #2c5ed3 !important;
-  opacity: 1;
-}
-
-.modal-custom-btn {
+.modal .modal-dialog .modal-content .modal-header .modal-footer .modal-custom-btn {
   background-color: #2c5ed3;
   color: white;
 }
@@ -110,6 +104,11 @@ body {
   padding-top: 10px;
   padding-bottom: 10px;
 
+}
+
+.close {
+  color: #2c5ed3 !important;
+  opacity: 1;
 }
 
 /* notification modal */
@@ -132,15 +131,10 @@ body {
   background-color: #2C5ED3;
 }
 
+
+.list-group-item,
 .list-group-item:first-child {
   border: none !important;
-}
-
-.list-group-item+.list-group-item {
-  border: none !important;
-}
-
-.list-group-item {
   padding: 0 !important;
 }
 
@@ -151,17 +145,12 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
-
   #notification-modal-dialog {
     max-width: 100%;
     right: 5px;
     left: 5px;
   }
-
-
 }
-
-
 
 .event-modal-dialog {
   max-width: 90% !important;
@@ -176,4 +165,15 @@ body {
 #even-modal-body {
   max-height: 600px;
   overflow: auto;
+}
+
+.alert {
+  background: #2C5ED3 !important;
+  color: white !important;
+  margin-bottom: 0 !important;
+}
+
+.event-modal-header {
+  background-color: #2C5ED3;
+  color: white;
 }
