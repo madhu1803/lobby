@@ -128,12 +128,11 @@ body {
   min-width: 280px;
   max-width: 200px;
   position: fixed;
-  bottom: 0px;
+  bottom: -15px;
   right: 10px;
-
+  max-height: 88vh;
+  /* top: 50px; */
 }
-
-
 
 
 .notification-username {
@@ -149,5 +148,23 @@ body {
 }
 
 .list-group-item {
-  padding: 0.3rem 1.25rem;
+  padding: 0 !important;
+}
+
+#minimize-btn {
+  position: absolute;
+  right: 40px;
+  color: #2C5ED3 !important;
+}
+
+@media only screen and (max-width: 450px) {
+
+  #notification-modal-dialog {
+    max-width: inherit;
+    right: inherit;
+
+
+  }
+
+
 }
