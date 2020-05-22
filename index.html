@@ -51,15 +51,15 @@
                     <i class="fas fa-comments"></i>General Chat
                 </a>
             </li>
-            <!-- <li class="nav-item">
-                <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="modal"
-                    data-target="#notification-modal-dialog" style="margin-left: 10px;">
+            <li class="nav-item">
+                <a type="button" class="btn btn-outline-light" id="tab-btn" onclick="openAnnouncementsModal()"
+                    style="margin-left: 10px;">
                     Announcements
                 </a>
             </li>
             <li class="nav-item">
                 <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="tab" onclick=""> Logout
-                </a> </li> -->
+                </a> </li>
         </ul>
     </div>
 
@@ -158,7 +158,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-block notification-modal-class" id="notification-modal-body">
+            <div class="modal-body notification-modal-class" id="notification-modal-body">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">

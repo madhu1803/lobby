@@ -113,7 +113,6 @@ body {
   bottom: -15px;
   right: 10px;
   max-height: 88vh;
-  /* top: 50px; */
 }
 
 #notification-modal-header {
@@ -155,11 +154,11 @@ body {
 
 }
 
-/* #tab-btn {
+#tab-btn {
   color: white;
   margin-right: 20px !important;
 }
 
 #tab-btn:hover {
   color: #2C5ED3 !important;
-} */
+}

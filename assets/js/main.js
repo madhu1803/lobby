@@ -42,6 +42,10 @@ function CloseAnnouncementsModal() {
     document.getElementById('notification-modal-dialog').style.display = 'none'
 }
 
+function openAnnouncementsModal() {
+    document.getElementById('notification-modal-dialog').style.display = 'block'
+}
+
 //image resizer 
 setInterval(function () {
     $('map').imageMapResize();
