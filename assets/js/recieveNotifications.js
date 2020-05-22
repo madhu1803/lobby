@@ -128,7 +128,8 @@ function generate(timestamp, name, text, div){
       console.log("Timestamp Value: ",timestamp);
       var date = new Date(timestamp.seconds*1000);
       var hours = date.getHours();
-      var minutes = date.getMinutes();
+      if(date.getMinutes() < 9)
+      var minutes = "0" + date.getMinutes();
       // date.getMonth()
       timeElement.innerHTML = date.getDate() + " " + monthInWords(date.getMonth()) + " " + date.getFullYear() + " | " + hours + " : " + minutes;
     } else if (imageUrl) { // If the message is an image.
