@@ -1,3 +1,4 @@
+/* tabs */
 .tabs-holder {
   background: #2c5ed3;
   height: 70px !important;
@@ -74,6 +75,7 @@ body {
   height: 100%;
 }
 
+/* modal  */
 
 .modal-header {
   /* background-color: #2c5ed3 !important; */
@@ -116,4 +118,12 @@ body {
 .modal-dialog {
   max-width: 400px;
 
+}
+
+#notification-modal-dialog {
+  min-width: 280px;
+  max-width: 300px;
+  position: fixed;
+  bottom: 0px;
+  right: 20px;
 }
