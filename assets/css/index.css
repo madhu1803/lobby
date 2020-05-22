@@ -1,20 +1,3 @@
-/* tabs */
-.tabs-holder {
-  background: #2c5ed3;
-  height: 70px !important;
-}
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link {
-  background-color: transparent;
-  border: none;
-  color: white;
-}
-
-.nav-tabs .nav-link i {
-  margin-right: 10px;
-}
-
 html,
 body {
   margin: 0;
@@ -22,17 +5,22 @@ body {
   height: 100%;
 }
 
-.tab-content>.tab-pane {
-  margin: 0;
-  padding: 0;
+/* tabs */
+.tabs-holder {
+  background: #2c5ed3;
+  height: 70px !important;
 }
 
-.nav-item {
-  display: inline-block;
+.tabs-holder .nav-tabs .nav-link.active,
+.tabs-holder .nav-tabs .nav-link {
+  background-color: transparent;
+  border: none;
+  color: white;
+  border-radius: 0;
+  padding: 10px 15px;
 }
 
-/* scrollable tab */
-.nav.nav-tabs {
+.tabs-holder .nav.nav-tabs {
   text-align: center;
   border: none;
   overflow: auto;
@@ -45,26 +33,24 @@ body {
   transform: translate(-50%, -50%);
 }
 
-
-.nav-tabs .nav-link.active,
-.nav-tabs .nav-link {
-  border: none;
-  color: white;
-  border-radius: 0;
-  padding: 10px 15px;
-}
-
 /* hover  */
-.nav-link:hover {
+.tabs-holder .nav-tabs .nav-link:hover,
+.tabs-holder .nav-tabs .nav-link.active:hover {
   background: white;
   color: #2c5ed3 !important;
-
 }
 
-.nav-link.active:hover {
-  background: white;
-  color: #2c5ed3 !important;
+.tabs-holder .nav-tabs .nav-link i {
+  margin-right: 10px;
+}
 
+.tabs-holder .nav-tabs .nav-item {
+  display: inline-block;
+}
+
+.tab-content>.tab-pane {
+  margin: 0;
+  padding: 0;
 }
 
 /* img */
@@ -82,9 +68,8 @@ body {
 /* portrait modal  */
 
 .modal-header {
-  /* background-color: #2c5ed3 !important; */
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
   background-color: white !important;
   color: #2c5ed3;
   padding-bottom: 0;
@@ -120,8 +105,6 @@ body {
 
 }
 
-
-
 /* notification modal */
 #notification-modal-dialog {
   min-width: 280px;
@@ -130,9 +113,13 @@ body {
   bottom: -15px;
   right: 10px;
   max-height: 88vh;
-  /* top: 50px; */
 }
 
+#notification-modal-header {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+
+}
 
 .notification-username {
   background-color: #2C5ED3;

@@ -5,14 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sarcontech.com</title>
-    <!--  BOOTSTRAP CSS only -->
+    <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-    <!-- Font awesome CSS -->
-    <link rel="stylesheet" href="./assets/css/all.css">
-    <!-- Other CSS files -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
-    <!-- CUSTOM CSS -->
+    <!-- Font awesome css -->
+    <link rel="stylesheet" href="./assets/css/fontawesome.css">
+    <!-- Custom css -->
     <link rel="stylesheet" href="./assets/css/index.css">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
@@ -20,15 +17,12 @@
 </head>
 
 <body>
-    <!-- Tabs holder -->
     <div class="tabs-holder">
-        <!-- Nav tabs -->
         <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-                <a class="nav-link  active" data-toggle="tab" href="#lobby">
+                <a class="nav-link active" data-toggle="tab" href="#lobby">
                     <i class="fas fa-building"></i>Lobby
                 </a>
-
             </li>
             <li class="nav-item">
                 <a class="nav-link" data-toggle="tab" href="#auditorium">
@@ -78,13 +72,15 @@
                 </a>
             </li>
             <!-- hidden tabs -->
-
-            <li class="nav-item"> <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="modal"
-                    data-target="#notification-modal-dialog" style="margin-left: 10px;">
-                    Announcements </a>
+            <li class="nav-item">
+                <a type="button" class="btn btn-outline-light" id="tab-btn" onclick="openAnnouncementsModal()"
+                    style="margin-left: 10px;">
+                    Announcements
+                </a>
             </li>
-            <li class="nav-item"> <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="tab"
-                    onclick=""> Logout </a> </li>
+            <li class="nav-item">
+                <a type="button" class="btn btn-outline-light" id="tab-btn" data-toggle="tab" onclick=""> Logout
+                </a> </li>
         </ul>
     </div>
 
@@ -92,7 +88,8 @@
     <div class="tab-content">
         <!-- Lobby Panel -->
         <div id="lobby" class="container-fluid tab-pane active">
-            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/lobby.jpg" class="img-fluid main-background-img" usemap="#mapname">
+            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/lobby.jpg"
+                class="img-fluid main-background-img" usemap="#mapname">
             <map name="mapname">
                 <!-- crayon -->
                 <area shape="rect" style="cursor: pointer;" coords="102,90,574,288" onclick="switchTo('crayonIbm')">
@@ -167,17 +164,28 @@
         <div id="info_desk" class="container-fluid tab-pane fade">
             <img src="https://storage.googleapis.com/sarconasiabucket/trescon/help-desk.jpg" class="img-fluid main-background-img" usemap="#mapname4">
             <map name="mapname4">
-                <area shape="rect" style="cursor: pointer;" coords="235,547,425,601" href="#IBM" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="236,628,426,678" href="#Sonic" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="237,689,425,743" href="#Zoho" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="474,549,664,601" href="#IBM" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="473,629,665,668" href="#Sonic" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="475,686,663,745" href="#Zoho" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1311,457,1540,600" href="#TV" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1027,510,1259,694" href="#Help" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1253,776,1413,873" href="#Agenda" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1423,788,1575,875" href="#EventGuide" class="nav-link" data-toggle="tab">
-                <area shape="rect" style="cursor: pointer;" coords="1585,788,1739,881" href="#FAQ" class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="235,547,425,601" href="#IBM" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="236,628,426,678" href="#Sonic" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="237,689,425,743" href="#Zoho" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="474,549,664,601" href="#IBM" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="473,629,665,668" href="#Sonic" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="475,686,663,745" href="#Zoho" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1311,457,1540,600" href="#TV" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1027,510,1259,694" href="#Help" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1253,776,1413,873" href="#Agenda" class="nav-link"
+                    data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1423,788,1575,875" href="#EventGuide"
+                    class="nav-link" data-toggle="tab">
+                <area shape="rect" style="cursor: pointer;" coords="1585,788,1739,881" href="#FAQ" class="nav-link"
+                    data-toggle="tab">
             </map>
         </div>
         <!-- Resources Panel -->
@@ -188,15 +196,17 @@
         <div id="general_chat" class="container-fluid tab-pane fade">
             <h3>Genenral chat</h3>
         </div>
-
         <div id="crayonIbm" class="container-fluid tab-pane fade">
-            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/booth_manageengine.jpg" class="img-fluid" usemap="#mapname5">
+            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/booth_manageengine.jpg" class="img-fluid"
+                usemap="#mapname5">
         </div>
         <div id="sonicWall" class="container-fluid tab-pane fade">
-            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/booth_manageengine.jpg" class="img-fluid" usemap="#mapname6">
+            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/booth_manageengine.jpg" class="img-fluid"
+                usemap="#mapname6">
         </div>
         <div id="manageEngine" class="container-fluid tab-pane fade">
-            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/booth_manageengine.jpg" class="img-fluid" usemap="#mapname7">
+            <img src="https://storage.googleapis.com/sarconasiabucket/trescon/booth_manageengine.jpg" class="img-fluid"
+                usemap="#mapname7">
         </div>
 
     </div>
@@ -223,23 +233,23 @@
             </div>
         </div>
     </div>
-    <!--modal-->
 
+    <!-- notification modal -->
     <div class="modal-dialog modal-dialog-scrollable " role="document" id="notification-modal-dialog">
         <div class="modal-content">
-            <div class="modal-header">
+            <div class="modal-header" id="notification-modal-header">
                 <h5 class="modal-title">Announcements</h5>
                 <button id="minimize-btn"> <i class='fa fa-minus'></i> </button>
-                <button type="button" class="close" onclick="notificationModal()">
+                <button type="button" class="close" onclick="CloseAnnouncementsModal()">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-block notification-modal-class" id="notification-modal-body">
+            <div class="modal-body notification-modal-class" id="notification-modal-body">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
                             <div class="media w-100 mb-3">
-                                <div class="media-body  ">
+                                <div class="media-body">
                                     <div class="notification-username mb-2 px-3 py-2">
                                         <p class="text-small mb-0 text-white">Ashish chaudary</p>
                                     </div>
@@ -309,8 +319,7 @@
         </div>
     </div>
 
-
-    <!-- BOOTSTRAP JS, Popper.js, and jQuery -->
+    <!-- Bootstrap, Popperjs and Jquery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
@@ -326,52 +335,7 @@
             $('#myTab a[href="#'+tabName+'"]').tab('show');
         }
     </script>
-    <!-- custom js -->
     <script src="./assets/js/main.js"></script>
-
-    <!-- script to handle landscape alert -->
-    <script>
-        // close modal notification
-        function notificationModal() {
-            document.getElementById('notification-modal-dialog').style.display = 'none'
-        }
-
-        function alertUser() {
-            // function to handle events from listner
-
-            if (window.matchMedia("(orientation: portrait)").matches) {
-                // currently in portrait, changing to landscape
-                $("#portrait-modal").modal('hide')
-            }
-            if (window.matchMedia("(orientation: landscape)").matches) {
-                // currently in landscape, changing to portrait
-                $("#portrait-modal").modal('show')
-            }
-        }
-
-        // works only on orientation change
-        window.onorientationchange = function () {
-            alertUser() // calls the function on change | remember `on` and `after` are different
-        };
-        // works only on page load/init
-        if (window.matchMedia("(orientation: portrait)").matches) {
-            // currently in portrait
-            $("#portrait-modal").modal('show')
-        }
-        // minimize modal
-        $("#minimize-btn").click(function () {
-            if ($('.notification-modal-class').hasClass('d-none')) {
-                $(".notification-modal-class").removeClass('d-none');
-                $(".notification-modal-class").addClass('d-block');
-            } else {
-                $('.notification-modal-class').removeClass('d-block');
-                $(".notification-modal-class").addClass('d-none');
-            }
-        });
-
-        $("#minimize-btn").click()
-
-    </script>
 </body>
 
 </html>
