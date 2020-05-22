@@ -127,10 +127,11 @@ body {
 
 }
 
-.notification-username {
-  background-color: #2C5ED3;
+#minimize-btn {
+  position: absolute;
+  right: 40px;
+  color: #2C5ED3 !important;
 }
-
 
 .list-group-item,
 .list-group-item:first-child {
@@ -138,10 +139,8 @@ body {
   padding: 0 !important;
 }
 
-#minimize-btn {
-  position: absolute;
-  right: 40px;
-  color: #2C5ED3 !important;
+.notification-username {
+  background-color: #2C5ED3;
 }
 
 @media only screen and (max-width: 450px) {
@@ -152,6 +151,7 @@ body {
   }
 }
 
+/* event modal  */
 .event-modal-dialog {
   max-width: 90% !important;
   width: 90% !important;
@@ -162,18 +162,37 @@ body {
   z-index: 100000;
 }
 
+.event-modal-header {
+  background-color: #2C5ED3;
+  color: white;
+}
+
 #even-modal-body {
   max-height: 600px;
   overflow: auto;
+}
+
+#close-event-btn {
+  color: white !important;
+}
+
+.container .about-heading .title {
+  font-weight: 900;
+  font-size: 42px;
+}
+
+.container .about-heading .sessions {
+  color: #2C5ED3;
+
+}
+
+.container .about-heading .lead {
+  color: #2C5ED3;
+  margin: 2% auto;
 }
 
 .alert {
   background: #2C5ED3 !important;
   color: white !important;
   margin-bottom: 0 !important;
-}
-
-.event-modal-header {
-  background-color: #2C5ED3;
-  color: white;
 }
