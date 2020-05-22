@@ -143,7 +143,6 @@ function generate(timestamp, name, text, div){
     // Show the card fading-in and scroll to view the new message.
     setTimeout(function() {div.classList.add('visible')}, 1);
     messageListElement.scrollTop = messageListElement.scrollHeight;
-    messageInputElement.focus();
 }
 
 // Displays a Message in the UI.
