@@ -75,6 +75,11 @@ body {
   height: 100%;
 }
 
+.main-background-img {
+  width: 100vw;
+  height: 100vh;
+}
+
 /* portrait modal  */
 
 .modal-header {
@@ -116,10 +121,7 @@ body {
 
 }
 
-.modal-dialog {
-  max-width: 400px;
 
-}
 
 /* notification modal */
 #notification-modal-dialog {
@@ -128,7 +130,11 @@ body {
   position: fixed;
   bottom: 0px;
   right: 10px;
+
 }
+
+
+
 
 .notification-username {
   background-color: #2C5ED3;

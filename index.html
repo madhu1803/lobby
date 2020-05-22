@@ -63,7 +63,7 @@
     <div class="tab-content">
         <!-- Lobby Panel -->
         <div id="lobby" class="container-fluid tab-pane active">
-            <img src="./assets/images/lobby.jpg" class="img-fluid" usemap="#mapname">
+            <img src="./assets/images/lobby.jpg" class="img-fluid main-background-img" usemap="#mapname">
             <map name="mapname">
                 <area shape="rect" style="cursor: pointer;" coords="733,657,1040,773" href="#">
                 <area shape="rect" style="cursor: pointer;" coords="1138,653,1450,771" href="#">
@@ -122,7 +122,7 @@
     </div>
     <!--modal-->
 
-    <div class="modal-dialog " role="document" id="notification-modal-dialog">
+    <div class="modal-dialog modal-dialog-scrollable" role="document" id="notification-modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Announcement</h5>
@@ -131,7 +131,7 @@
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
-            <div class="modal-body d-block">
+            <div class="modal-body d-block" id="notification-modal-body">
                 <div class="list-group">
                     <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
                         <div class="d-flex w-100 justify-content-between">
@@ -139,6 +139,40 @@
                                 <div class="media-body ml-3 ">
                                     <div class="notification-username mb-2 px-3 py-2">
                                         <p class="text-small mb-0 text-white">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body ml-3 ">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 ">Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">Test which
+                                            is a new approach all
+                                            solutions</p>
+                                    </div>
+                                    <p class="small text-muted">12:00 PM | Aug 13</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body ml-3 ">
+                                    <div class="notification-username mb-2 px-3 py-2 text-white">
+                                        <p class="text-small mb-0 ">Ashish chaudary</p>
                                     </div>
                                     <div class="bg-white rounded py-2 px-3 mb-2">
                                         <p class="text-small mb-0 text-muted">Test which
@@ -211,7 +245,6 @@
         window.onorientationchange = function () {
             alertUser() // calls the function on change | remember `on` and `after` are different
         };
-
         // works only on page load/init
         if (window.matchMedia("(orientation: portrait)").matches) {
             // currently in portrait
