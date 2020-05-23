@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./assets/css/fontawesome.css">
     <!-- Custom css -->
     <link rel="stylesheet" href="./assets/css/index.css">
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
 </head>
@@ -109,7 +108,8 @@
                     data-toggle="tab"> -->
 
                 <!-- video -->
-                <area data-fancybox="gallery1" shape="rect" style="cursor: pointer;" coords="832,180,1084,324" href="https://www.youtube.com/watch?v=72S7O0DIgS4">
+                <area data-fancybox="gallery1" shape="rect" style="cursor: pointer;" coords="832,180,1084,324"
+                    href="https://www.youtube.com/watch?v=72S7O0DIgS4">
 
                 <!-- help desk -->
                 <area shape="rect" style="cursor: pointer;" coords="778,790,1180,920" onclick="switchTo('info_desk')">
@@ -158,7 +158,8 @@
                 <area shape="rect" style="cursor: pointer;" coords="814,634,1129,736" onclick="switchTo('crayonIbm')">
 
                 <!-- manange engine -->
-                <area shape="rect" style="cursor: pointer;" coords="1406,629,1720,736" onclick="switchTo('manageEngine')">
+                <area shape="rect" style="cursor: pointer;" coords="1406,629,1720,736"
+                    onclick="switchTo('manageEngine')">
             </map>
         </div>
 
@@ -180,7 +181,8 @@
                 <area shape="rect" style="cursor: pointer;" coords="473,629,665,668" onclick="switchTo('sonicWall')">
                 <area shape="rect" style="cursor: pointer;" coords="475,686,663,745" onclick="switchTo('manageEngine')">
 
-                <area data-fancybox="gallery2" style="cursor: pointer;" coords="1311,457,1540,600" href="https://www.youtube.com/watch?v=72S7O0DIgS4" alt="alttext">
+                <area data-fancybox="gallery2" style="cursor: pointer;" coords="1311,457,1540,600"
+                    href="https://www.youtube.com/watch?v=72S7O0DIgS4" alt="alttext">
                 <area shape="rect" style="cursor: pointer;" coords="1027,510,1259,694" href="#Help">
                 <area shape="rect" style="cursor: pointer;" coords="1253,776,1413,873" href="#Agenda">
                 <area shape="rect" style="cursor: pointer;" coords="1423,788,1575,875" href="#EventGuide">
@@ -335,12 +337,10 @@
                         <h3 class="title text-center">
                             <span class="about">Events</span>
                             <span class="sessions">List</span>
-                            <p class="lead">This is a modified jumbotron that
-                                occupies the
-                                entire horizontal
-                                space of
-                                its
-                                parent.</p>
+                            <div>
+                                <button type="button" class="btn btn-outline-primary btn-lg text-center"
+                                    id="event-modal-btn">Join Room</button>
+                            </div>
                         </h3>
                     </div>
                 </div>
@@ -356,30 +356,94 @@
                     <hr />
                     <div class="row">
                         <div class="col-md-6">
-                            <h4>9.00 AM &ndash; 10.00 AM</h4>
+                            <h5>9.00 AM &ndash; 09.45 AM</h5>
                         </div>
                         <div class="col-md-6">
-                            <div class="alert alert-primary" role="alert">INAUGURATION</div>
-
+                            <div class="alert alert-primary" role="alert">Virtual Booth Visits and Networking</div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5>9.45 AM &ndash; 09.55 AM</h5>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-primary" role="alert">Welcome Address</div>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="mb-3">10.00 AM &ndash; 10.40 AM</h5>
+                            <h6>PANEL DISCUSSION</h6>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-primary" role="alert">Data Privacy Cyber Security and Building
+                                Secure Organizations</div>
                             <ul class="list-group">
-                                <li class="list-group-item ">Welcome Address :<strong> Dr. Dhanasekaran, Chairman ,
-                                        IET-CLN</strong></li>
-                                <li class="list-group-item">Chief Guest Address &ndash; <strong>TBC</strong></li>
-                                <li class="list-group-item">Special Guest - <strong>TBC</strong></li>
-                                <li class="list-group-item">Inauguration of stalls</li>
+                                <li class="list-group-item event-item ">Disaster prevention and recovery planning for
+                                    Cyber
+                                    Attacks.</li>
+                                <li class="list-group-item event-item">Vulnerability Assessment of Cyber security for
+                                    SCADA and
+                                    other industrial control
+                                    systems (ICS).</li>
+                                <li class="list-group-item event-item">Effective ways to prevent Data Loss and Implement
+                                    Data
+                                    Recovery.</li>
+                                <li class="list-group-item event-item">How to optimize your Return of Security
+                                    Investment (ROSI).
+                                </li>
+                                <li class="list-group-item event-item">Creating effective endpoint security strategy.
+                                </li>
+                                <li class="list-group-item event-item">Zero Trust Security strategy – pros and cons</li>
+                                <br>
+                                <li class="list-group-item event-item">30 min panel discussion with 10 mins Q&A</li>
+                                <br>
+                                <h6><strong>PANELISTS</strong></h6>
+                                <br>
+                                <h6><strong>SUBHAJIT DEB</strong></h6>
+                                <p>Chief Information Security Officer, Dr. Reddy's Laboratories</p>
+                                <br>
+                                <h6><strong>SHWETA SRIVASTAVA</strong></h6>
+                                <p>Chief Information Security Officer, Paul Merchants Finance (P) Ltd.</p>
+                                <br>
+                                <h6><strong>HARSHAD MENGLE</strong></h6>
+                                <p>Chief Information Security Officer, Future Group</p>
+                                <br>
+                                <h6><strong>JACXINE FERNANDEZ</strong></h6>
+                                <p>Vice President & Group Chief Information Security Officer, Adani Group</p>
+                                <br>
+                                <h6><strong>MODERATOR</strong></h6>
+                                <br>
+                                <h6><strong>JACXINE FERNANDEZ</strong></h6>
+                                <p>Vice President & Group Chief Information Security Officer, Adani Group</p>
                             </ul>
                         </div>
                     </div>
                     <hr />
                     <div class="row">
                         <div class="col-md-6">
-                            <h4>10.10 AM &ndash; 10.40 AM</h4>
+                            <h5 class="mb-3">10.45 AM &ndash; 11.00 AM</h5>
+                            <h6>TECH TALK</h6>
                         </div>
                         <div class="col-md-6">
-                            <div class="alert alert-warning" role="alert">Super Key Note</div>
+                            <div class="alert alert-warning" role="alert">The boundless Cybersecurity for hyper
+                                distributed era</div>
                             <ul class="list-group">
-                                <li class="list-group-item"><strong>Nokia</strong></li>
-                                <li class="list-group-item"><strong>TBC</strong></li>
+                                <li class="list-group-item event-item">Secure remote connectivity in today’s environment
+                                </li>
+                                <li class="list-group-item event-item">Zero Trust Network Access</li>
+                                <li class="list-group-item event-item">Importance of advanced endpoint detection and
+                                    mitigation
+                                </li>
+                                <li class="list-group-item event-item">Why Cloud Email Security should be a top priority
+                                    of CISOs
+                                </li>
+                                <li class="list-group-item event-item">Secure Wi-Fi in times of pandemic</li>
+                                <br>
+                                <h6><strong>DEBASISH MUKHERJEE</strong></h6>
+                                <p>Vice President Regional Sales (APAC) SonicWall</p>
                             </ul>
                         </div>
                     </div>
@@ -387,131 +451,178 @@
                     <hr />
                     <div class="row">
                         <div class="col-md-6">
-                            <h4>10.40 AM - 11.00 AM</h4>
+                            <h5 class="mb-3">11.05 AM &ndash; 11.45 AM</h5>
+                            <h6>PANEL DISCUSSION</h6>
                         </div>
-
                         <div class="col-md-6">
-                            <div class="alert alert-success" role="alert">Tea Break</div>
+                            <div class="alert alert-primary" role="alert">Cyber Security for Digitally Transformed
+                                organizations</div>
+                            <ul class="list-group">
+                                <li class="list-group-item event-item">Internal Cyber Security: Preventing IT Threats
+                                    from Inside.
+                                </li>
+                                <li class="list-group-item event-item">Cyber Threat Management (CTM): Enabling early
+                                    identification
+                                    of threats, data
+                                    driven situational awareness, accurate decision-making, and timely threat
+                                    mitigating actions.
+                                </li>
+                                <li class="list-group-item event-item">Cloud Security Trends in 2020: AI, Ransomware &
+                                    BYOD, Mobile
+                                </li>
+                                <li class="list-group-item event-item">The Zero Trust Approach to Data Security
+                                </li>
+                                <li class="list-group-item event-item">Cyber Security to support Digital Transformation.
+                                </li>
+                                <br>
+                                <li class="list-group-item event-item">30 min panel discussion with 10 mins Q&A
+                                </li>
+                                <br>
+                                <h6><strong>PANELISTS</strong></h6>
+                                <br>
+                                <h6><strong>ABHILASH BALAN</strong></h6>
+                                <p>Chief Information Security Officer, Bharti AXA General Insurance</p>
+                                <br>
+                                <h6><strong>SHIVKUMAR PANDEY</strong></h6>
+                                <p>Group CISO, BSE Ltd.</p>
+                                <br>
+                                <h6><strong>MANOJ K SHRIVASTAVA</strong></h6>
+                                <p>Chief Information Security Officer, Future Generali India Insurance Company Limited
+                                </p>
+                                <br>
+                                <h6><strong>AKHIL WADHAVKAR</strong></h6>
+                                <p>Chief Information Security Officer, Sharekhan by BNP Paribas</p>
+                            </ul>
                         </div>
                     </div>
-
-                    <hr />
+                    <hr>
                     <div class="row">
                         <div class="col-md-6">
-                            <h4>11.00am to 12.30pm</h4>
+                            <h5 class="mb-3">11.50 AM - 12.50 PM</h5>
+                            <h6>NETWORKING HOUR</h6>
                         </div>
-
                         <div class="col-md-6">
-                            <div class="alert alert-danger" role="alert">Panel Discussion -1 on &ldquo;eMobility&rdquo;
+                            <div class="alert alert-success" role="alert">Networking Session at Exhibition Area
+                                &
+                                CISO Boardroom Lounge Session (only by invite)</div>
+                            <div class="container text-center">
+                                <button type="button" class="btn btn-outline-primary"
+                                    id="event-modal-btn">Networking</button>
+                                <button type="button" class="btn btn-outline-primary" id="event-modal-btn">Ciso</button>
                             </div>
-
+                            <br>
+                            <h6><strong>RAVI SHANKAR MALLAH</strong></h6>
+                            <p>Architect / IBM security, Specialist – Resilient & i2</p>
+                        </div>
+                    </div>
+                    <hr />
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h5 class="mb-3">12.55 PM &ndash; 13.35 PM</h5>
+                            <h6>PANEL DISCUSSION</h6>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-primary" role="alert">Security Essentials to Mitigate Threats and
+                                Latest innovations in Threat Response
+                                Technologies </div>
                             <ul class="list-group">
-                                <li class="list-group-item">Moderator: TBC, Bosch</li>
-                                <li class="list-group-item">TBC, BOSCH</li>
-                                <li class="list-group-item">TBC, Urban Mobility Panel</li>
-                                <li class="list-group-item">TBC, Rural Mobility Panel</li>
-                                <li class="list-group-item">TBC, Logistics and Freight Panel</li>
-                                <li class="list-group-item">TBC</li>
-                            </ul>
-                        </div>
-                    </div>
+                                <li class="list-group-item event-item ">Identifying cyber vulnerabilities and mitigating
+                                    them.
+                                </li>
+                                <li class="list-group-item event-item">The Impact of Coronavirus on Cybersecurity: How
+                                    the response
+                                    to COVID-19 has
+                                    increased cyber risk</li>
+                                <li class="list-group-item event-item">Industry wise Point of View on Types of Security
+                                    Incidents
+                                </li>
+                                <li class="list-group-item event-item">Current security challenges for as organization
+                                </li>
+                                <li class="list-group-item event-item">Enterprise Security Essentials</li>
 
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>1.30 pm to 1.50 pm</h4>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="alert alert-warning" role="alert">Key Note -1 : &ldquo;Fintech&rdquo;, TBC,
-                                Paypal
-                            </div>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>1.50 pm to 2.10 pm</h4>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="alert alert-primary" role="alert">Key Note -2 : TBC</div>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>2.10 pm to 3.40 pm</h4>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="alert alert-info" role="alert">Panel Discussion -2 on &ldquo;Smart Cities &amp;
-                                Industry
-                                4.0-Moderator: TBC&rdquo;</div>
-
-                            <ul class="list-group">
-                                <li class="list-group-item">TBC, Nokia Networks and Solutions Ltd.</li>
-                                <li class="list-group-item">Mr. Srinivasan, VP, GAVS Technologies</li>
-                                <li class="list-group-item">TBC (From STPI)</li>
-                                <li class="list-group-item">TBC</li>
-                                <li class="list-group-item">TBC</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>3.40 pm to 4.00 pm</h4>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="alert alert-success" role="alert">Tea Break</div>
-                        </div>
-                    </div>
-
-                    <hr />
-                    <div class="row">
-                        <div class="col-md-6">
-                            <h4>4.00 pm to 5.30 pm</h4>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="alert alert-success" role="alert">Panel Discussion -3 on &ldquo;Topic
-                                (TBC)&rdquo;-
-                                Moderator: TBC</div>
-
-                            <ul class="list-group">
-                                <li class="list-group-item">TBC</li>
-                                <li class="list-group-item">TBC</li>
-                                <li class="list-group-item">TBC</li>
-                                <li class="list-group-item">TBC</li>
-                                <li class="list-group-item">TBC</li>
+                                <li class="list-group-item event-item">Security Incident response technologies</li>
+                                <br>
+                                <li class="list-group-item event-item">30 min panel discussion with 10 mins Q&A</li>
+                                <br>
+                                <h6><strong>PANELISTS</strong></h6>
+                                <br>
+                                <h6><strong>SHAJU BHASKARAN</strong></h6>
+                                <p>Chief Information Security Officer, Ahli Bank, Qatar</p>
+                                <br>
+                                <h6><strong>VISHAL SINHA</strong></h6>
+                                <p>CIO & CISO, TranzLease Holdings (I) Pvt. Ltd.</p>
+                                <br>
+                                <h6><strong>LUKAS KRIKSTAPONIS</strong></h6>
+                                <p>CISO, European Merchant Bank, Lithuania, Europe</p>
+                                <br>
+                                <h6><strong>RAJKUMAR V</strong></h6>
+                                <p>Technology Evangelist, ManageEngine</p>
+                                <br>
+                                <h6><strong>MODERATOR</strong></h6>
+                                <br>
+                                <h6><strong>SAKSHI VIDUR</strong></h6>
+                                <p>Head - Information Security for Asia Pacific, Yum! Brands</p>
                             </ul>
                         </div>
                     </div>
                     <hr />
                     <div class="row">
                         <div class="col-md-6">
-                            <h4>5.30 pm to 6.00 pm</h4>
+                            <h5 class="mb-3">13.40 PM &ndash; 14.20 PM</h5>
+                            <h6>PANEL DISCUSSION</h6>
                         </div>
-
                         <div class="col-md-6">
-                            <div class="alert alert-info" role="alert">Valedictory function</div>
+                            <div class="alert alert-primary" role="alert">Post COVID-19 Cyber Security Posture </div>
+                            <ul class="list-group">
+                                <li class="list-group-item event-item ">Increased security risk from remote
+                                    working/learning
+                                </li>
+                                <li class="list-group-item event-item">COVID-19: Cyber security Checklist for Remote
+                                    Working</li>
+                                <li class="list-group-item event-item">Need for organisations to re-visit their Business
+                                    continuity
+                                    program
+                                </li>
+                                <li class="list-group-item event-item">Re-visit Incident response plans to feature
+                                    Covid19
+                                    pandemics that affect many countries and critical elements of supply chains at the
+                                    same
+                                </li>
+                                <li class="list-group-item event-item">Updating BCPs and remote working
+                                    policies/practices whilst
+                                    prioritizing cyber
+                                    security during post COVID-19 re-strategizing</li>
+                                <br>
+                                <li class="list-group-item event-item">30 min panel discussion with 10 mins Q&A</li>
+                                <br>
+                                <h6><strong>PANELISTS</strong></h6>
+                                <br>
+                                <h6><strong>SOVON LAL MUKHERJEE</strong></h6>
+                                <p>VP, Chief Information Security Officer, Fincare Small Finance Bank</p>
+                                <br>
+                                <h6><strong>BHUSHAN DEO</strong></h6>
+                                <p>Chief Information Security Officer, Thermax Limited</p>
+                                <br>
+                                <h6><strong>DANIEL ADARAMOLA</strong></h6>
+                                <p>Chief Information Security Officer, Unity bank, Nigeria</p>
+                                <br>
+                                <h6><strong>MODERATOR</strong></h6>
+                                <br>
+                                <h6><strong>BITHAL BHARDWAJ</strong></h6>
+                                <p>Group Chief Information Security Officer, GMR Group</p>
+                            </ul>
                         </div>
                     </div>
                     <hr />
                     <div class="row">
                         <div class="col-md-6">
-                            <h4>6.00 pm to 6.15 pm</h4>
+                            <h5>14.25 PM &ndash; 17.00 PM</h5>
                         </div>
-
                         <div class="col-md-6">
-                            <div class="alert alert-info" role="alert">Vote of Thanks and Takeaways</div>
+                            <div class="alert alert-primary" role="alert">Virtual Booth Visits and Networking</div>
                         </div>
                     </div>
+                    <hr />
                 </div>
             </div>
         </div>
