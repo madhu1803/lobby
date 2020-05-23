@@ -229,6 +229,30 @@ body {
   background: #2C5ED3 !important;
 }
 
+/* connect with us modal */
+/* notification modal */
+#connect-with-us-modal-dialog {
+  min-width: 320px;
+  max-width: 450px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-height: 50vh;
+  z-index: 1000;
+}
+
+#connect-with-us-modal-header {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: #2c5ed3 !important;
+
+}
+
+.fa-comment,
+.fa-phone {
+  font-size: 20px;
+}
+
 /* image logo */
 .image-logo-position {
   position: fixed;
