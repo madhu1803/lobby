@@ -228,6 +228,12 @@ body {
   color: white !important;
 }
 
+/* event room modal */
+.event-room-modal-btn:hover {
+  background: #2C5ED3 !important;
+}
+
+/* image logo */
 .image-logo-position {
   position: fixed;
   bottom: 0;
