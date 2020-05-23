@@ -126,6 +126,7 @@ body {
   bottom: -15px;
   right: 10px;
   max-height: 88vh;
+  z-index: 1000;
 }
 
 #notification-modal-header {
@@ -156,6 +157,12 @@ body {
     max-width: 100%;
     right: 5px;
     left: 5px;
+  }
+
+  .image-logo-position {
+    position: fixed;
+    z-index: 100;
+    bottom: 60px !important;
   }
 }
 
@@ -217,4 +224,15 @@ body {
 
 #close-event-btn {
   color: white !important;
+}
+
+.image-logo-position {
+  position: fixed;
+  bottom: 8px;
+  left: 16px;
+  font-size: 18px;
+}
+
+.logo-img {
+  width: 140px;
 }
