@@ -41,7 +41,7 @@ setInterval(function () {
     $('map').imageMapResize();
 }, 1000);
 
-//close even modal
+//close event modal
 function eventmodal() {
     $("#eventmodal").toggleClass('d-none')
 
@@ -53,4 +53,22 @@ $("#events-modal-btn").click(function () {
 
 $('.tab-item').click(function () {
     $("#eventmodal").addClass("d-none")
+});
+
+//close event room modal
+function eventroommodal() {
+    $("#eventroommodal").toggleClass('d-none')
+
+}
+//btn click
+$("#events-room-modal-btn").click(function () {
+    eventroommodal()
+});
+
+function eventroommodal() {
+    $("#eventroommodal").toggleClass('d-none')
+
+}
+$('.tab-item').click(function () {
+    $("#eventroommodal").addClass("d-none")
 });
