@@ -89,3 +89,5 @@ function ConnectWithUsmodal() {
 $("#connect-with-us-modal-btn").click(function () {
     ConnectWithUsmodal()
 });
+
+$("#connect-with-us-modal-dialog").toggleClass('d-none')
