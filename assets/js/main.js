@@ -72,3 +72,20 @@ function eventroommodal() {
 $('.tab-item').click(function () {
     $("#eventroommodal").addClass("d-none")
 });
+
+// connect with us modal
+function toggleConnectWithUsModal() {
+
+    $('#connect-with-us-modal-dialog').toggleClass('d-none')
+}
+
+//close  modal
+
+function ConnectWithUsmodal() {
+    $("#connect-with-us-modal-dialog").toggleClass('d-none')
+
+}
+//btn click
+$("#connect-with-us-modal-btn").click(function () {
+    ConnectWithUsmodal()
+});
