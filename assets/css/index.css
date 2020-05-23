@@ -159,10 +159,12 @@ body {
     left: 5px;
   }
 
+  /* logo  */
   .image-logo-position {
     position: fixed;
     z-index: 100;
-    bottom: 60px !important;
+    bottom: 50px !important;
+    left: 0 !important;
   }
 }
 
@@ -228,11 +230,18 @@ body {
 
 .image-logo-position {
   position: fixed;
-  bottom: 8px;
-  left: 16px;
+  bottom: 0;
+  left: 0;
   font-size: 18px;
+  color: white !important;
+  background-color: black !important;
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 10px;
 }
 
-.logo-img {
-  width: 140px;
+.logo-container {
+  margin-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
 }
