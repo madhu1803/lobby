@@ -51,9 +51,7 @@ $("#events-modal-btn").click(function () {
     eventmodal()
 });
 
-$('.tab-item').click(function () {
-    $("#eventmodal").addClass("d-none")
-});
+
 
 //close event room modal
 function eventroommodal() {
@@ -69,9 +67,7 @@ function eventroommodal() {
     $("#eventroommodal").toggleClass('d-none')
 
 }
-$('.tab-item').click(function () {
-    $("#eventroommodal").addClass("d-none")
-});
+
 
 
 // connect with us modal
@@ -91,16 +87,18 @@ $("#connect-with-us-modal-btn").click(function () {
     ConnectWithUsmodal()
 });
 
+$('.tab-item').click(function () {
+    $("#connect-with-us-modal-dialog").addClass("d-none")
+    $("#eventroommodal").addClass("d-none")
+    $("#eventmodal").addClass("d-none")
+    $("#pdf-modal-dialog").addClass("d-none")
+});
+
 
 // pdf modal
 function openPdfModal() {
-
     $('#pdf-modal-dialog').toggleClass('d-none')
 }
-
-$('.tab-item').click(function () {
-    $("#pdf-modal-dialog").addClass("d-none")
-});
 
 function togglePdfModal() {
 
