@@ -73,6 +73,7 @@ $('.tab-item').click(function () {
     $("#eventroommodal").addClass("d-none")
 });
 
+
 // connect with us modal
 function toggleConnectWithUsModal() {
 
@@ -90,4 +91,18 @@ $("#connect-with-us-modal-btn").click(function () {
     ConnectWithUsmodal()
 });
 
-$("#connect-with-us-modal-dialog").toggleClass('d-none')
+
+// pdf modal
+function openPdfModal() {
+
+    $('#pdf-modal-dialog').toggleClass('d-none')
+}
+
+$('.tab-item').click(function () {
+    $("#pdf-modal-dialog").addClass("d-none")
+});
+
+function togglePdfModal() {
+
+    $('#pdf-modal-dialog').toggleClass('d-none')
+}
