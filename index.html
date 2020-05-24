@@ -195,109 +195,12 @@
             <button type="button" class="btn-primary" id="events-modal-btn">Events</button>
             <button type="button" class="btn-primary" id="events-room-modal-btn">Events Room</button>
             <button type="button" class="btn-primary" id="connect-with-us-modal-btn">Connect With Us</button>
-
-            <!-- connect with us  modal -->
-            <div class="modal-dialog modal-dialog-scrollable " role="document" id="connect-with-us-modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" id="connect-with-us-modal-header">
-                        <h5 class="modal-title">Connect With Us</h5>
-                        <button type="button" class="close" onclick="toggleConnectWithUsModal()">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                    <div class="modal-body connect-with-us-modal-class" id="connect-with-us-modal-body">
-                        <div class="list-group" id="list-messages">
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
-                                <p>We are here to help!</p>
-                                <div class="d-flex w-100 justify-content-between">
-                                    <div class="media w-100 mb-3">
-                                        <div class="media-body">
-                                            <div class="notification-username mb-2 px-3 py-2">
-                                                <p class="text-small mb-0 text-white"><i class="fa fa-user mr-4"
-                                                        aria-hidden="true"></i>Ashish chaudary</p>
-                                            </div>
-                                            <div class="bg-white rounded py-2 px-3 mb-2">
-                                                <p class="text-small mb-0 text-muted">IBM, Events Manager</p>
-                                            </div>
-                                            <p class="small text-center w-100  ">
-                                                <i class="fa fa-comment" aria-hidden="true"></i>
-                                                |
-                                                <i class="fa fa-camera" aria-hidden="true"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
-
-                                <div class="d-flex w-100 justify-content-between">
-                                    <div class="media w-100 mb-3">
-                                        <div class="media-body">
-                                            <div class="notification-username mb-2 px-3 py-2">
-                                                <p class="text-small mb-0 text-white"><i class="fa fa-user mr-4"
-                                                        aria-hidden="true"></i>Ashish chaudary</p>
-                                            </div>
-                                            <div class="bg-white rounded py-2 px-3 mb-2">
-                                                <p class="text-small mb-0 text-muted">IBM, Events Manager</p>
-                                            </div>
-                                            <p class="small text-center w-100 ">
-                                                <i class="fa fa-comment" aria-hidden="true"></i>
-                                                |
-                                                <i class="fa fa-camera" aria-hidden="true"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
-
-                                <div class="d-flex w-100 justify-content-between">
-                                    <div class="media w-100 mb-3">
-                                        <div class="media-body">
-                                            <div class="notification-username mb-2 px-3 py-2">
-                                                <p class="text-small mb-0 text-white"><i class="fa fa-user mr-4"
-                                                        aria-hidden="true"></i>Ashish chaudary</p>
-                                            </div>
-                                            <div class="bg-white rounded py-2 px-3 mb-2">
-                                                <p class="text-small mb-0 text-muted">IBM, Events Manager</p>
-                                            </div>
-                                            <p class="small text-center w-100">
-                                                <i class="fa fa-comment" aria-hidden="true"></i>
-                                                |
-                                                <i class="fa fa-camera" aria-hidden="true"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
-
-                                <div class="d-flex w-100 justify-content-between">
-                                    <div class="media w-100 mb-3">
-                                        <div class="media-body">
-                                            <div class="notification-username mb-2 px-3 py-2">
-                                                <p class="text-small mb-0 text-white"><i class="fa fa-user mr-4"
-                                                        aria-hidden="true"></i>Ashish chaudary</p>
-                                            </div>
-                                            <div class="bg-white rounded py-2 px-3 mb-2">
-                                                <p class="text-small mb-0 text-muted">IBM, Events Manager</p>
-                                            </div>
-                                            <p class="small text-center w-100">
-                                                <i class="fa fa-comment" aria-hidden="true"></i>
-                                                |
-                                                <i class="fa fa-camera" aria-hidden="true"></i></p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
         </div>
-    </div>
-    <!-- Genenral chat Panel -->
-    <div class="tab-content">
+        <!-- Genenral chat Panel -->
         <div id="general_chat" class="container-fluid tab-pane fade">
             <h3>Genenral chat</h3>
+            <button type="button" class="btn-primary" id="pdf-modal-btn" onclick="openPdfModal()">PDF</button>
+
         </div>
     </div>
     <div class="tab-content">
@@ -1082,6 +985,175 @@
             </div>
         </div>
     </div>
+
+    <!-- connect with us  modal -->
+    <div class="modal-dialog modal-dialog-scrollable " role="document" id="connect-with-us-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" id="connect-with-us-modal-header">
+                <h5 class="modal-title">Connect With Us</h5>
+                <button type="button" class="close" onclick="toggleConnectWithUsModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body connect-with-us-modal-class" id="connect-with-us-modal-body">
+                <div class="list-group" id="list-messages">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                        <p>We are here to help!</p>
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2">
+                                        <p class="text-small mb-0 text-white"><i class="fa fa-user mr-4"
+                                                aria-hidden="true"></i>Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">IBM, Events Manager</p>
+                                    </div>
+                                    <p class="small text-center w-100  ">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                        |
+                                        <i class="fa fa-camera" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2">
+                                        <p class="text-small mb-0 text-white"><i class="fa fa-user mr-4"
+                                                aria-hidden="true"></i>Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">IBM, Events Manager</p>
+                                    </div>
+                                    <p class="small text-center w-100 ">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                        |
+                                        <i class="fa fa-camera" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2">
+                                        <p class="text-small mb-0 text-white"><i class="fa fa-user mr-4"
+                                                aria-hidden="true"></i>Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">IBM, Events Manager</p>
+                                    </div>
+                                    <p class="small text-center w-100">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                        |
+                                        <i class="fa fa-camera" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2">
+                                        <p class="text-small mb-0 text-white"><i class="fa fa-user mr-4"
+                                                aria-hidden="true"></i>Ashish chaudary</p>
+                                    </div>
+                                    <div class="bg-white rounded py-2 px-3 mb-2">
+                                        <p class="text-small mb-0 text-muted">IBM, Events Manager</p>
+                                    </div>
+                                    <p class="small text-center w-100">
+                                        <i class="fa fa-comment" aria-hidden="true"></i>
+                                        |
+                                        <i class="fa fa-camera" aria-hidden="true"></i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- PDF  modal -->
+    <div class="modal-dialog modal-dialog-scrollable " role="document" id="pdf-modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header" id="pdf-modal-header">
+                <h5 class="modal-title">Documents</h5>
+                <button type="button" class="close" onclick="togglePdfModal()">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body pdf-modal-class" id="pdf-modal-body">
+                <div class="list-group" id="list-messages">
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                        <p><i class="fas fa-file-pdf mr-3"></i>File Name</p>
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2"
+                                        onclick="alert('file downloaded')">
+                                        <p class="text-small mb-0 text-white text-center">
+                                            <i class="fas fa-download mr-1"></i>Download</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                        <p><i class="fas fa-file-pdf mr-3"></i>File Name</p>
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2"
+                                        onclick="alert('file downloaded')">
+                                        <p class="text-small mb-0 text-white text-center">
+                                            <i class="fas fa-download mr-1"></i>Download</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                        <p><i class="fas fa-file-pdf mr-3"></i>File Name</p>
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2"
+                                        onclick="alert('file downloaded')">
+                                        <p class="text-small mb-0 text-white text-center">
+                                            <i class="fas fa-download mr-1"></i>Download</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action flex-column align-items-start ">
+                        <p><i class="fas fa-file-pdf mr-3"></i>File Name</p>
+                        <div class="d-flex w-100 justify-content-between">
+                            <div class="media w-100 mb-3">
+                                <div class="media-body">
+                                    <div class="notification-username mb-2 px-3 py-2"
+                                        onclick="alert('file downloaded')">
+                                        <p class="text-small mb-0 text-white text-center">
+                                            <i class="fas fa-download mr-1"></i>Download</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--image logo-->
     <div class="image-logo-position">
         <div class="text-left logo-container">
             <p>Powered By Sarcon Technologies</p>

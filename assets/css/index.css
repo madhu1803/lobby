@@ -235,7 +235,6 @@ body {
 }
 
 /* connect with us modal */
-/* notification modal */
 #connect-with-us-modal-dialog {
   min-width: 320px;
   max-width: 450px;
@@ -256,6 +255,24 @@ body {
 .fa-comment,
 .fa-camera {
   font-size: 20px;
+}
+
+/* pdf modal  */
+#pdf-modal-dialog {
+  min-width: 320px;
+  max-width: 450px;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  max-height: 50vh;
+  z-index: 1000;
+}
+
+#pdf-modal-header {
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+  color: #2c5ed3 !important;
+
 }
 
 /* image logo */
