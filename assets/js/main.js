@@ -66,12 +66,12 @@ function toggleConnectWithUsModal() {
   $("#connect-with-us-modal-dialog").toggleClass("d-none");
 }
 
-// $(".tab-item").click(function () {
-//   $("#connect-with-us-modal-dialog").addClass("d-none");
-//   $("#eventroommodal").addClass("d-none");
-//   $("#eventmodal").addClass("d-none");
-//   $("#pdf-modal-dialog").addClass("d-none");
-// });
+$(".tab-item").click(function () {
+  $("#connect-with-us-modal-dialog").addClass("d-none");
+  $("#eventroommodal").addClass("d-none");
+  $("#eventmodal").addClass("d-none");
+  $("#pdf-modal-dialog").addClass("d-none");
+});
 
 // pdf modal
 function togglePdfModal() {
