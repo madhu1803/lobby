@@ -249,6 +249,11 @@ body {
 
 .fa-comment {
   font-size: 20px;
+  color: black !important;
+}
+.video-camera {
+  position: absolute !important;
+  bottom: 32px !important;
 }
 
 /* pdf modal  */
