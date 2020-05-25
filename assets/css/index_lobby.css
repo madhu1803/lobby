@@ -46,7 +46,7 @@ body {
   display: inline-block;
 }
 
-.tab-content > .tab-pane {
+.tab-content>.tab-pane {
   margin: 0;
   padding: 0;
 }
@@ -57,7 +57,7 @@ body {
 }
 
 .tabs-holder .nav-tabs .nav-item .tab-action-btn:hover {
-  color: #2c5ed3 !important;
+  color: #2C5ED3 !important;
 }
 
 /* img */
@@ -109,12 +109,14 @@ body {
 .modal-body {
   padding-top: 10px;
   padding-bottom: 10px;
+
 }
 
 .close {
   color: #2c5ed3 !important;
   opacity: 1;
 }
+
 
 /* notification modal */
 #notification-modal-dialog {
@@ -131,12 +133,13 @@ body {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   color: #2c5ed3 !important;
+
 }
 
 #minimize-btn {
   position: absolute;
   right: 40px;
-  color: #2c5ed3 !important;
+  color: #2C5ED3 !important;
 }
 
 .list-group-item,
@@ -146,7 +149,7 @@ body {
 }
 
 .notification-username {
-  background-color: #2c5ed3;
+  background-color: #2C5ED3;
 }
 
 @media only screen and (max-width: 450px) {
@@ -173,7 +176,7 @@ body {
 }
 
 .event-modal-header {
-  background-color: #2c5ed3;
+  background-color: #2C5ED3;
   color: white;
 }
 
@@ -183,16 +186,17 @@ body {
 }
 
 .container .about-heading .sessions {
-  color: #2c5ed3;
+  color: #2C5ED3;
+
 }
 
 .container .about-heading .lead {
-  color: #2c5ed3;
+  color: #2C5ED3;
   margin: 2% auto;
 }
 
 .alert {
-  background: #2c5ed3 !important;
+  background: #2C5ED3 !important;
   color: white !important;
 }
 
@@ -207,7 +211,8 @@ body {
 }
 
 #event-modal-btn:hover {
-  background: #2c5ed3 !important;
+  background: #2C5ED3 !important;
+
 }
 
 #even-modal-body {
@@ -226,7 +231,7 @@ body {
 
 /* event room modal */
 .event-room-modal-btn:hover {
-  background: #2c5ed3 !important;
+  background: #2C5ED3 !important;
 }
 
 /* connect with us modal */
@@ -245,9 +250,11 @@ body {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   color: #2c5ed3 !important;
+
 }
 
-.fa-comment {
+.fa-comment,
+.fa-camera {
   font-size: 20px;
 }
 
@@ -267,6 +274,7 @@ body {
   padding-top: 10px !important;
   padding-bottom: 10px !important;
   color: #2c5ed3 !important;
+
 }
 
 /* image logo */
